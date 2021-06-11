@@ -1,4 +1,4 @@
-# app
+# landing-page
 
 ## Project setup
 ```
