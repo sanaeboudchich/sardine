@@ -3,8 +3,8 @@
   <section id="content">
     <router-view></router-view>
     <Banner />
-    <About />
     <Services />
+    <Team/>
     <Video />
     <login />
     <Arrow />
@@ -14,11 +14,12 @@
 
 <script>
 import Banner from './components/Banner'
-import About from './components/About'
 import Services from './components/Services'
 import Video from './components/Video'
 import Arrow from './components/Arrow'
-import Login from "./components/login";
+import Login from "./components/login"
+import Team from "./components/Team";
+
 
 
 export default {
@@ -27,9 +28,10 @@ export default {
     Video,
     Login,
     Banner,
-    About,
     Services,
+    Team,
     Arrow
+    
   }
 }
 

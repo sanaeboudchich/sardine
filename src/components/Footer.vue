@@ -5,18 +5,40 @@
 
 
    <div class="container text-center">
-     <a href="#"><i class="fab fa-instagram"></i></a>
-     <a href="#"> <i class="fab fa-facebook-f"></i></a>
-     <a href="#"><i class="fab fa-linkedin-in"></i></a>
-     <a href="#"><i class="fab fa-youtube"></i></a>
-     <a href="#"><i class="fab fa-twitter"></i></a>
-     <p>Tous droits réservés©</p>
+  <div class="row w-100">
+    <div class="col">
+  <img v-bind:src="require('../assets/loogo.png')" width="100" alt="service-image" />
+  <div class="menubblock_2">
+
+    <p>8 Bis rue de la fontaine au roi,75011 Paris</p>
+  </div>
+  </div>
+    <div class="col">
+    
+    <div class="menub">
+        
+    </div>
+    </div>
+
+  <div class="col">
+  <div class="menub">
+    <p></p>
+  </div>
+  </div>
 
 
-   </div>
+  <div class="iconcol-md-3text-centerblock_2">
+    <h5>Reseaux Sociaux</h5>
+      </div>
 
+
+
+
+  </div>
+    <br>
+  <p>Tous droits réservés©2021</p>
 			</div>
-
+   </div>
 </template>
 
 
@@ -33,15 +55,16 @@ export default {
 <style>
 
 a {
-  color: white;
+  color: rgb(7, 7, 7);
   font-weight: lighter;
 }
 p{
   font-weight: lighter;
+  color: rgb(7, 7, 7);
 }
 
 a:hover {
-  color: #FECF98;
+  color: #050505;
 }
 
 .block_2 {
@@ -54,7 +77,7 @@ a:hover {
 }
 
 h5 {
-  color: #FECF98;
+  color: #070707;
 }
 
 .menub {
@@ -78,9 +101,9 @@ h5 {
 }
 
 .footer{
-  background-color: #343a40;
+   background-color: #FFFFFF;
   padding-top: 40px;
   padding-bottom: 30px;
-  color: white;
+  color: #ffffff;
 }
 </style>

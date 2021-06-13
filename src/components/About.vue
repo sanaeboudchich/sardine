@@ -19,7 +19,7 @@
           </div>
 
           <div class="col-md-6 text-center">
-            <img v-bind:src="require('../assets/dance.jpg')" width="450" alt="service-image" />
+            <img v-bind:src="require('../assets/banner.png')" width="450" alt="service-image" />
           </div>
 
         </div>
@@ -51,7 +51,7 @@ h1 {
 
 span {
   font-weight: bold;
-  color: #FECF98;
+  color: #ffffff;
   text-transform: uppercase;
 }
 

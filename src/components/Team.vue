@@ -1,31 +1,19 @@
 <template>
-  <div class="ourteam container" id="ourteam">
-
-    <div class="ourteam_wrapper">
-
-      <div class="team1 row container" id="team">
-
-        <div class="team_members col-md-3 text-center" data-name="Truc 1"><img v-bind:src="require('')" alt="Team_Images" />
-          <h5 class="sub_title">Danseur 1</h5>
+ <div class="background container-fluid">
+    <div class="banner_content container">
+        <h2>Les avantages qu’offrent KEA<br/><br/></h2>
+      <div class="row">
+        <div class="col-md-6 mb-5 mb-md-0 text-center">
+          <img v-bind:src="require('../assets/Junior.png')" width="750" alt="service-image" />
         </div>
-
-        <div class="team_members col-md-3 text-center" data-name="Machin 2"><img v-bind:src="require('')" alt="Team_Images" />
-          <h5 class="sub_title">Danseur 2</h5>
-        </div>
-
-        <div class="team_members col-md-3 text-center" data-name="Chose 3"><img v-bind:src="require('')" alt="Team_Images" />
-          <h5 class="sub_title">Danseur 3</h5>
-        </div>
-
-        <div class="team_members col-md-3 text-center" data-name="Chose 4"><img v-bind:src="require('')" alt="Team_Images" />
-          <h5 class="sub_title">Les autres</h5>
+          <div class="col-md-6 mb-5 mb-md-0 text-center">
+            <img v-bind:src="require('../assets/senior.png')" width="750" alt="service-image" />
         </div>
       </div>
     </div>
   </div>
-
-
 </template>
+
 
 
 <script>
@@ -52,6 +40,9 @@ h5 {
   margin: 7px;
   font-size: 14px;
   font-weight: bold;
+}
+h2{
+  color: #FE007A;
 }
 
 p {

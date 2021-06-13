@@ -1,32 +1,35 @@
 <template>
     <div class="services container-fluid" id="services">
 <div class="container">
+  <h2>Comment ça marche ?<br/><br/></h2>
+  
+  
         <div class="row container">
           <div class="icon col-md-4 text-center">
 
-            <img v-bind:src="require('../assets/musicien.jpg')" class="center-block" width="150" alt="service-image" />
+            <img v-bind:src="require('../assets/3.png')" class="center-block" width="150" alt="service-image" />
             <article>
-              <h3>Comment calculer son tarif horaire freelance ?</h3>
-              <p>Pour cela, partez du salaire net mensuel que vous aimeriez percevoir. Ajoutez-y le montant nécessaire pour couvrir vos charges sociales et fiscales, ainsi que vos frais d’activité. Divisez ensuite ce montant par le nombre d’heures travaillées en un mois, et vous obtenez votre taux horaire.</p>
+              <br/><h3>Inscris sur la <br/>plateforme KEA</h3>
+              <p>En rejoignant KEA, tu <br/>rejoins un réseau de <br/>freelances bienveillant.</p>
             </article>
 
           </div>
 
           <div class="icon col-md-4 text-center">
-            <img v-bind:src="require('../assets/pleureuse.jpg')" width="150" class="center-block" alt="service-image" />
+            <img v-bind:src="require('../assets/2.png')" width="150" class="center-block" alt="service-image" />
             <article>
-              <h3>Les statuts freelance</h3>
-              <p>Pour devenir freelance, la majorité des travailleurs indépendants optent soit pour le statut de SARL (ou la forme unipersonnelle EURL), soit pour celui de SAS (ou la forme unipersonnelle SASU), soit pour le régime d’auto-entrepreneur.</p>
+              <br/><h3>Trouve ton <br/>freelance</h3>
+              <p>Match avec le freelance <br/>qui te correspond et <br/>travaille avec lui.</p>
             </article>
 
 
           </div>
 
           <div class="icon col-md-4 text-center">
-            <img v-bind:src="require('../assets/maxresdefault.jpg')" class="center-block" width="150" alt="service-image" />
+            <img v-bind:src="require('../assets/3.png')" class="center-block" width="150" alt="service-image" />
             <article>
-              <h3>Comment trouver des clients ?</h3>
-              <p>Il y a plusieurs choses qu’un jeune freelancer puisse faire pour trouver des clients, en créant un site web et des réseaux sociaux pour se construire une présence en ligne et se donner de la visibilité, en travaillant gratuitement au début pour gagner la confiance d’un potentiel client, ….</p>
+              <br/><h3>Gagne de <br/>l’expérience</h3>
+              <p>Partage tes<br/> connaissances et gagnes <br/>en compétences.</p>
             </article>
 
 
@@ -93,19 +96,24 @@ export default {
 #services {
   padding-top: 70px;
   padding-bottom: 70px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 
 
 }
 
-h4 {
+h3 {
   margin: 15px;
   font-weight: bold;
+  color: #433232;
 }
-
+h2{
+  color: #FE007A;
+}
 p {
   font-size: 12px;
   font-weight: lighter;
+  color: #1F1F1F;
+  font-family: 'Poppins', sans-serif;
 }
 
 </style>
