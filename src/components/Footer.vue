@@ -4,7 +4,7 @@
      <cookie-law theme="dark-lime"></cookie-law>
 
 
-   <div class="container text-center">
+   <div class="container">
   <div class="row w-100">
     <div class="col">
   <img v-bind:src="require('../assets/loogo.png')" width="100" alt="service-image" />
@@ -29,14 +29,18 @@
 
   <div class="iconcol-md-3text-centerblock_2">
     <h5>Reseaux Sociaux</h5>
-      </div>
+        <a href="https://twitter.com/keaofficiel"><img class="twitter" src="../assets/twitter.png"></a>
+        <a href="https://www.instagram.com/keaofficiel/"><img class="instagram" src="../assets/insta.png"></a>
+        <a href="hhttps://www.linkedin.com/company/keaofficiel"><img class="tlinkedin" src="../assets/in.png"></a>
+
+  </div>
 
 
 
 
   </div>
     <br>
-  <p>Tous droits réservés©2021</p>
+  <p class=" text-center">Tous droits réservés©2021</p>
 			</div>
    </div>
 </template>

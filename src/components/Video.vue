@@ -1,14 +1,12 @@
 <template>
   <div class="background container-fluid" id="video">
-    <div class="banner_content container">
-      <div class="row">
 
-        <div class="col-md-12 text-center">
-          <div class="video">
-            <iframe width="350" height="200" src="https://www.youtube.com/embed/-icXGp0DhwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-             </div>
-      </div>
+        <div class="banner_content container col-md-12 text-center">
+          
+            <iframe width="250" height="100" src="https://www.youtube.com/embed/-icXGp0DhwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+           
+      
     </div>
   </div>
 </template>

@@ -37,6 +37,7 @@ export default {
 	text-decoration: none;
 	scroll-behavior: smooth;
   font-family: 'Ubuntu', sans-serif;
+  
 }
 
 </style>

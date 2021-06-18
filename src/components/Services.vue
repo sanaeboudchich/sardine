@@ -1,13 +1,13 @@
 <template>
     <div class="services container-fluid" id="services">
 <div class="container">
-  <h2>Comment ça marche ?<br/><br/></h2>
+  <h2 class="text-center">Comment ça marche ?<br/><br/></h2>
   
   
         <div class="row container">
           <div class="icon col-md-4 text-center">
 
-            <img v-bind:src="require('../assets/3.png')" class="center-block" width="150" alt="service-image" />
+            <img v-bind:src="require('../assets/1.png')" class="center-block" width="190" alt="service-image" />
             <article>
               <br/><h3>Inscris sur la <br/>plateforme KEA</h3>
               <p>En rejoignant KEA, tu <br/>rejoins un réseau de <br/>freelances bienveillant.</p>
