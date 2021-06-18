@@ -1,5 +1,5 @@
 <template>
-    <div class="services container-fluid" id="services">
+    <div class="team container-fluid" id="team">
 <div class="container">
   <h2 class="text-center">Comment ça marche ?<br/><br/></h2>
   

@@ -26,7 +26,7 @@
           </div>
 
           <div class="icon col-md-4 text-center">
-            <img v-bind:src="require('../assets/3.png')" class="center-block" width="150" alt="service-image" />
+            <img v-bind:src="require('../assets/3.png')" class="center-block" width="190" alt="service-image" />
             <article>
               <br/><h3>Gagne de <br/>l’expérience</h3>
               <p>Partage tes<br/> connaissances et gagnes <br/>en compétences.</p>

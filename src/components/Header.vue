@@ -12,10 +12,10 @@
       <b-collapse id="nav-collapse" is-nav>
         <!-- CENTRE -->
         <b-navbar-nav class="ml-md-auto">
-          <b-nav-item to="/#Home" exact-active-class=" active">Accueil</b-nav-item>
-          <b-nav-item to="/#" exact-active-class=" active">Fonctionnement</b-nav-item>
-          <b-nav-item to="/#" exact-active-class=" active">Avantages</b-nav-item>
-          <b-nav-item to="/#" exact-active-class=" active">Tarif</b-nav-item>
+          <b-nav-item to="/" exact-active-class=" active">Accueil</b-nav-item>
+          <b-nav-item to="/Servises" exact-active-class=" active">Fonctionnement</b-nav-item>
+          <b-nav-item to="/Team" exact-active-class=" active">Avantages</b-nav-item>
+          <b-nav-item to="/Tarif" exact-active-class=" active">Tarif</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
 </b-navbar>

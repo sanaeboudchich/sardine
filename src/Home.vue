@@ -4,7 +4,8 @@
     <router-view></router-view>
     <Banner />
     <Services />
-    <Team/>
+    <Team />
+    <Tarif />
     <Video />
     <login />
     <Arrow />
@@ -18,6 +19,7 @@ import Services from './components/Services'
 import Video from './components/Video'
 import Arrow from './components/Arrow'
 import Login from "./components/login"
+import Tarif from "./components/Tarif"
 import Team from "./components/Team";
 
 
@@ -30,6 +32,7 @@ export default {
     Banner,
     Services,
     Team,
+    Tarif,
     Arrow
     
   }
