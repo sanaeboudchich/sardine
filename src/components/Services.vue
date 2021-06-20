@@ -7,7 +7,7 @@
         <div class="row container">
           <div class="icon col-md-4 text-center">
 
-            <img v-bind:src="require('../assets/1.png')" class="center-block" width="190" alt="service-image" />
+            <img v-bind:src="require('../assets/1.png')" class="center-block" width="220" alt="service-image" />
             <article>
               <br/><h3>Inscris sur la <br/>plateforme KEA</h3>
               <p>En rejoignant KEA, tu <br/>rejoins un réseau de <br/>freelances bienveillant.</p>
@@ -16,7 +16,7 @@
           </div>
 
           <div class="icon col-md-4 text-center">
-            <img v-bind:src="require('../assets/2.png')" width="150" class="center-block" alt="service-image" />
+            <img v-bind:src="require('../assets/2.png')" width="190" class="center-block" alt="service-image" />
             <article>
               <br/><h3>Trouve ton <br/>freelance</h3>
               <p>Match avec le freelance <br/>qui te correspond et <br/>travaille avec lui.</p>

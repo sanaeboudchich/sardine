@@ -1,20 +1,21 @@
 <template>
     <div class="team container-fluid" id="team">
 <div class="container">
-  <h2 class="text-center">Comment ça marche ?<br/><br/></h2>
+  <h2 class="text-center">Les avantages qu’offrent KEA<br/><br/></h2>
   
   
         <div class="row container">
           <div class="icon col-md-6 ">
-  <img v-bind:src="require('../assets/keahomme.png')" width="600" class="center-block" alt="service-image" />
+  <img v-bind:src="require('../assets/keahomme.png')" width="590" class="center-block" alt="service-image" />
   <div class="card-img-overlay">
-    <h3 class="card-title text-center">Je suis un <br>
-freelance junior</h3>
-    <ul class="liste">
-    <li>1. Je suis accompagné</li>
-    <li>2. Je gagne de l’expérience</li>
-    <li>3. Je trouve des clients </li>
-    <li>4. J’élargis mon réseau </li>
+    <h3 class="card-title text-center">Je suis un<br>
+      <span>freelance junior</span>
+      </h3>
+  <ul class="liste">
+    <li>Je suis accompagné</li>
+    <li>Je gagne de l’expérience</li>
+    <li>Je trouve des clients </li>
+    <li>J’élargis mon réseau </li>
 </ul>
 
   </div>
@@ -25,12 +26,13 @@ freelance junior</h3>
               <div class="icon col-md-6 ">
   <img v-bind:src="require('../assets/keafemme.png')" width="600" class="center-block" alt="service-image" />
   <div class="card-img-overlay">
-        <h3 class="card-title text-center">Je suis un <br>
-freelance senior</h3>
+ <h3 class="card-title text-center">Je suis un<br>
+      <span>freelance senior</span>
+      </h3>
     <ul class="liste2">
-    <li>1. Je partage mon savoir</li>
-    <li>2. J’aide des jeunes freelances</li>
-    <li>3. J’élargis mon réseau </li>
+    <li>Je partage mon savoir</li>
+    <li>J’aide des jeunes freelances</li>
+    <li>J’élargis mon réseau </li>
    
 </ul>
   </div>
@@ -80,9 +82,19 @@ export default {
 }
 
 h3 {
-  margin: 15px;
+  margin: 20px;
   font-weight: bold;
   color: #433232;
+
+  
+}
+span {
+  background-color: #FFB600;
+  background-size: 3.2em;
+  background-position: 30px;
+  margin-bottom: 50px;
+  padding: -5px 10px 10px 0;
+  
 }
 h2{
   color: #FE007A;
@@ -100,6 +112,9 @@ p {
 .liste2 {
   margin: 15%;
 
+}
+li {
+  list-style-type: square;
 }
 
 </style>

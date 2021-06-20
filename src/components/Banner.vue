@@ -1,14 +1,13 @@
 <template>
-  <div class="background container-fluid">
+  <div class="background container-fluid" id="banner">
     <div class="banner_content container">
       <div class="row">
         <div class="col-md-6 mb-5 mb-md-0 ">
          
           <h1>Kea besoin d’aide ?</h1>
           <p>Kea est une plateforme web mettant en relation des freelance entre eux. L’objectif est de mettre en relation les auto-entrepreneurs avec un système de mentorat. Les freelance junior peuvent maintenant être accompagnés par ceux ayant déjà de l’expérience.</p>
-          <h3>S’inscrire à la newsletters</h3>
-          <p>pour être au courant de l’avancé du projet</p>
-          
+        <div><iframe width="540" height="405" src="https://f88e18e5.sibforms.com/serve/MUIEALNWgrsPtMUmMTEgbSIbtqD9CHR1sIEEck2dSsy88oScLM8YWrnW9kP8UGPqwTjsTJkv4urvgG-ie1A61IE38nyM5QOLCW5moNrs8v_oE7tq1JjtcUAhkVrTK2YwbzqKA4TrxqUdSjzL28zK1kkMsukGxs2d52oQVhB3wVUbuf6j3QGvXv-MZol6ldXdIxp3d87jhC7zWT3E" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe></div>
+ 
         </div>
           <div class="col-md-6 mb-5 mb-md-0 text-center">
             <img v-bind:src="require('../assets/test.png')" width="450" alt="service-image" />

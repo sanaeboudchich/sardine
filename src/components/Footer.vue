@@ -28,10 +28,10 @@
 
 
   <div class="iconcol-md-3text-centerblock_2">
-    <h5>Reseaux Sociaux</h5>
+    <h6>SUIS-NOUS SUR LES RÉSEAUX</h6>
         <a href="https://twitter.com/keaofficiel"><img class="twitter" src="../assets/twitter.png"></a>
         <a href="https://www.instagram.com/keaofficiel/"><img class="instagram" src="../assets/insta.png"></a>
-        <a href="hhttps://www.linkedin.com/company/keaofficiel"><img class="tlinkedin" src="../assets/in.png"></a>
+        <a href="hhttps://www.linkedin.com/company/keaofficiel"><img class="linkedin" src="../assets/in.png"></a>
 
   </div>
 
@@ -40,7 +40,7 @@
 
   </div>
     <br>
-  <p class=" text-center">Tous droits réservés©2021</p>
+  <p class=" text-center">© Tous droits réservés à l’agence Sardine</p>
 			</div>
    </div>
 </template>
@@ -65,6 +65,7 @@ a {
 p{
   font-weight: lighter;
   color: rgb(7, 7, 7);
+  font-family: 'Poppins', sans-serif;
 }
 
 a:hover {
@@ -80,8 +81,10 @@ a:hover {
   width: 300px;
 }
 
-h5 {
+h6 {
   color: #070707;
+  font-family: 'Poppins', sans-serif;
+  
 }
 
 .menub {
@@ -109,5 +112,19 @@ h5 {
   padding-top: 40px;
   padding-bottom: 30px;
   color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+.instagram {
+  margin-right: 2rem!important;
+  margin-left: 2rem!important;
+  width: 13%;
+}
+.twitter {
+  margin-left: 2rem!important;
+  width: 13%;
+}
+.linkedin {
+  margin-right: 3rem!important;
+  width: 13%;
 }
 </style>

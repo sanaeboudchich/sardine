@@ -8,7 +8,7 @@
           <div class="icon col-md-4 ">
   <img v-bind:src="require('../assets/listenrml.png')" width="300" class="center-block" alt="service-image" />
   <div class="card-img-overlay">
-    <h3 class="card-title text-center">Standard</h3>
+    <h3 class="s card-title text-center">Standard</h3>
     <ul class="liste">
     <li>Accès au dispositif KEA</li>
     <li>4 swipes par jour </li>
@@ -21,7 +21,7 @@
     <div class="col-md-4 ">
   <img v-bind:src="require('../assets/listenrml.png')" width="330" class="center-block" alt="service-image" />
   <div class="card-img-overlay">
-    <h3 class="card-title text-center">Premium</h3>
+    <h3 class="p card-title text-center">Premium</h3>
     <ul class="liste">
     <li>Accès au dispositif KEA</li>
     <li>12 swipes par jour </li>
@@ -34,7 +34,7 @@
               <div class="icon col-md-4 ">
   <img v-bind:src="require('../assets/listenrml.png')" width="300" class="center-block" alt="service-image" />
   <div class="card-img-overlay">
- <h3 class="card-title text-center">Gold +</h3>
+ <h3 class="g card-title text-center">Gold +</h3>
     <ul class="liste">
     <li>Accès au dispositif KEA</li>
     <li>Swipes ILLIMITÉS </li>
@@ -113,6 +113,29 @@ p {
 .icon {
 margin: auto;
 }
-
+li {
+  list-style-type: square;
+}
+.p {
+   background-color: #00E19B;
+  background-size: 3.2em;
+  background-position: 30px;
+  margin-bottom: 30px;
+  padding: -5px 7px 7px 0;
+}
+.g {
+   background-color: #A163FF;
+  background-size: 3.2em;
+  background-position: 30px;
+  margin-bottom: 30px;
+  padding: -5px 7px 7px 0;
+}
+.s {
+   background-color: #07DAE8;
+  background-size: 3.2em;
+  background-position: 30px;
+  margin-bottom: 30px;
+  padding: -5px 7px 7px 0;
+}
 
 </style>

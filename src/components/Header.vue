@@ -5,17 +5,17 @@
               class="container navbar">
 
       <b-navbar-brand to="/">
-        <img alt="Logo" src="@/assets/loogo.png" width="auto">
+        <img alt="Logo" src="@/assets/loogo.png" width="80%">
 
       </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <!-- CENTRE -->
         <b-navbar-nav class="ml-md-auto">
-          <b-nav-item to="/" exact-active-class=" active">Accueil</b-nav-item>
-          <b-nav-item to="/Servises" exact-active-class=" active">Fonctionnement</b-nav-item>
-          <b-nav-item to="/Team" exact-active-class=" active">Avantages</b-nav-item>
-          <b-nav-item to="/Tarif" exact-active-class=" active">Tarif</b-nav-item>
+          <b-nav-item href="#banner" exact-active-class=" active">Accueil</b-nav-item>
+          <b-nav-item href="#services" exact-active-class=" active">Fonctionnement</b-nav-item>
+          <b-nav-item href="#team" exact-active-class=" active">Avantages</b-nav-item>
+          <b-nav-item href="#tarif" exact-active-class=" active">Tarif</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
 </b-navbar>
