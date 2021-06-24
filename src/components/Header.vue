@@ -17,7 +17,7 @@
           <b-nav-item href="#services" exact-active-class=" active">Fonctionnement</b-nav-item>
           <b-nav-item href="#team" exact-active-class=" active">Avantages</b-nav-item>
           <b-nav-item href="#tarif" exact-active-class=" active">Tarif</b-nav-item>
-          <b-nav-item to="/Legale" exact-active-class=" active">Logiin</b-nav-item>
+          <b-nav-item to="/Legale" exact-active-class=" active">Login</b-nav-item>
           <b-nav-item to="/Singup" exact-active-class=" active">Sing up</b-nav-item>
           <b-nav-item href="https://dc-sardine-en-boite.systeme.io/kea-mentoring" exact-active-class=" active">Blog</b-nav-item>
         </b-navbar-nav>
