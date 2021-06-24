@@ -7,7 +7,7 @@
     <Team />
     <Tarif />
     <Video />
-    <login />
+    <logine />
     <Arrow />
   </section>
 

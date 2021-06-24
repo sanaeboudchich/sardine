@@ -21,6 +21,13 @@ const routes = [
             default: () => import(/* webpackChunkName: "Mentionslegales" */ '@/Legale.vue'),
         },
     },
+    {
+        path:'/Singup',
+        name: 'Singup',
+        components: {
+            default: () => import(/* webpackChunkName: "Mentionslegales" */ '@/Singup.vue'),
+        },
+    },
 
 ]
 

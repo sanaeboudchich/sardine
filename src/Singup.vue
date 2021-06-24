@@ -1,9 +1,8 @@
 <template>
 
   <section id="content">
-    
-    <Banner />
-    <Logiin />
+      <Banner />
+    <Singin/>
   </section>
 
 </template>
@@ -11,14 +10,13 @@
 <script>
 
 import Banner from './components/Banner'
-import Logiin from './components/Logiin';
+import Singin from './components/Singin';
 
 
 export default {
   name: 'Legale',
   components:{
-   
-    Logiin,
+   Singin,
     Banner
   }
 }
