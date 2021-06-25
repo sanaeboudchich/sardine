@@ -32,7 +32,7 @@
         <a href="https://twitter.com/keaofficiel"><img class="twitter" src="../assets/twitter.png"></a>
         <a href="https://www.instagram.com/keaofficiel/"><img class="instagram" src="../assets/insta.png"></a>
         <a href="hhttps://www.linkedin.com/company/keaofficiel"><img class="linkedin" src="../assets/in.png"></a>
-
+        <a href="https://join.slack.com/t/kea-freelance/shared_invite/zt-saf0p3sk-2RbyTcFAmsRimaaYLeY5vw"> slack </a>
   </div>
 
 
