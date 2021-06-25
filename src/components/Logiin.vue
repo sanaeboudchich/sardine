@@ -22,7 +22,7 @@ export default {
  methods: {
         signIn: function(){
             firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(
-               function (user){
+               function (){
                     alert('Your account has been created !')
                 },
                 function (err){
