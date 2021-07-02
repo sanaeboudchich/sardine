@@ -43,17 +43,10 @@ p {
 .background{
   padding-top: 100px;
   background-color: #FFFFFF;
-  padding-bottom: 70px;
-}
-.btn-primary {
-  background-color: #E3A964;
-  border-color: #E3A964 ;
-  margin-right: 15px;
+  padding-bottom: 100px;
 }
 
-.btn:hover {
-  transform: scale(1.1);
-}
+
 
 img{
   width: 50%;
@@ -67,7 +60,5 @@ img{
  
   line-height: 2;
 }
-.banner1{
-  background-image: url(/assets/backgrandbanner.png);
-}
+
 </style>
