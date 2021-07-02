@@ -6,25 +6,7 @@
 <p class="text1 text text-center">Grâce à Kea, mettez à l’épreuve et perfectionnez vos compétences techniques & pédagogiques en accompagnant de jeunes freelances. Rejoingnez notre communautée et participer à l’évolution de la french tech dans l’univers du numérique.</p>
 	<div class="gap-2 col-12 mx-auto">
   <button class="btn btn-primary" type="button" onclick="/t/kea-freelance/shared_invite/zt-saf0p3sk-2RbyTcFAmsRimaaYLeY5vw';">Rejoindre la communauté Kea</button>
-  
-</div>
-      <div class="row">
-        <div class="col-md-6 mb-5 mb-md-0 ">
-         
-          <h1>Freelance ?  Rejoignez Kea !</h1>
-          <h2>Grâce à Kea, perfectionnez vos compétences et développez votre réseau professionnel</h2>
-          <br/>
-          <p>À travers un canal Slack partagé avec d’autres entrepreneurs d’exception.  Les freelances juniors peuvent maintenant être accompagnés par ceux ayant déjà de l’expérience.</p>
-        
-        <div class="gap-2 col-12 mx-auto">
-  <button class="btn btn-primary" type="button" onclick="/t/kea-freelance/shared_invite/zt-saf0p3sk-2RbyTcFAmsRimaaYLeY5vw';">Rejoindre la communauté Kea</button>
-  
-</div>
-        </div>
-          <div class="col-md-6 mb-5 mb-md-0 text-center">
-            <img v-bind:src="require('../assets/bannerslack.png')" width="300" alt="service-image" />
-        </div>
-      </div>
+       </div>
     </div>
   </div>
 </template>
@@ -40,15 +22,16 @@ export default {
 
 h1{
   font-size: 30px;
-  color: #FE007A;
+  color: #000000;
   font-weight: Bold;
 font-family: 'Poppins' 'SemiBold';
+margin: 10px 0px 20px 30px;
 }
 p {
   font-size: 16px;
   color: #000000;
   font-family: 'Poppins', sans-serif;
-   margin: 10px 0px 20px 60px;
+   margin: 10px 40px 50px 30px;
 
 }
 
@@ -76,11 +59,11 @@ img{
   width: 50%;
 }
 .btn {
-  background-color: #FE007A;
+  background-color: #A163FF;
   align-items: 4;
   border-radius: 20px;
-  padding: 4 70px;
- 
+  padding: 5 70px ;
+  margin: 0px 400px 0px;
  
   line-height: 2;
 }
