@@ -28,6 +28,13 @@ const routes = [
             default: () => import(/* webpackChunkName: "Mentionslegales" */ '@/Singup.vue'),
         },
     },
+    {
+        path:'/Slack',
+        name: 'Slack',
+        components: {
+            default: () => import(/* webpackChunkName: "Slack" */ '@/Slack.vue'),
+        },
+    },
 
 ]
 

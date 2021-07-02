@@ -9,8 +9,8 @@
 
             <img v-bind:src="require('../assets/1.png')" class="center-block" width="220" alt="service-image" />
             <article>
-              <br/><h3>Inscris sur la <br/>plateforme KEA</h3>
-              <p>En rejoignant KEA, tu <br/>rejoins un réseau de <br/>freelances bienveillant.</p>
+              <br/><h4>Inscris-toi </h4>
+              <p>En rejoignant KEA, tu rejoins<br/> un réseau de freelances <br/>bienveillant.</p>
             </article>
 
           </div>
@@ -18,7 +18,7 @@
           <div class="icon col-md-4 text-center">
             <img v-bind:src="require('../assets/2.png')" width="190" class="center-block" alt="service-image" />
             <article>
-              <br/><h3>Trouve ton <br/>freelance</h3>
+              <br/><h4>Trouve ton freelance</h4>
               <p>Match avec le freelance <br/>qui te correspond et <br/>travaille avec lui.</p>
             </article>
 
@@ -28,8 +28,8 @@
           <div class="icon col-md-4 text-center">
             <img v-bind:src="require('../assets/3.png')" class="center-block" width="190" alt="service-image" />
             <article>
-              <br/><h3>Gagne de <br/>l’expérience</h3>
-              <p>Partage tes<br/> connaissances et gagnes <br/>en compétences.</p>
+              <br/><h4>Partage et échange</h4>
+              <p>Partage tes connaissances et <br/>gagnes en compétences.</p>
             </article>
 
 
@@ -101,19 +101,22 @@ export default {
 
 }
 
-h3 {
+h4 {
   margin: 15px;
-  font-weight: bold;
+  font-weight: Medium;
   color: #433232;
+   font-family: 'Poppins' 'Medium';
 }
 h2{
+  font-size: 30px;
   color: #FE007A;
+  font-weight: 'Semibold';
+  font-family: 'Poppins' 'SemiBold';
 }
 p {
-  font-size: 12px;
-  font-weight: lighter;
+  font-size: 16px;
   color: #1F1F1F;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins' 'Regular';
 }
 
 </style>

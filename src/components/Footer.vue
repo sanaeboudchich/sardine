@@ -9,7 +9,7 @@
     <div class="col">
   <img v-bind:src="require('../assets/loogo.png')" width="100" alt="service-image" />
   <div class="menubblock_2">
-
+  <br/>
     <p>8 Bis rue de la fontaine au roi,75011 Paris</p>
   </div>
   </div>
@@ -63,9 +63,9 @@ a {
   font-weight: lighter;
 }
 p{
-  font-weight: lighter;
-  color: rgb(7, 7, 7);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins' 'Regular';
+  font-size: 16px;
+  color: #0a0a0a;
 }
 
 a:hover {

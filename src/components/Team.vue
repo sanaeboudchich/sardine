@@ -1,6 +1,7 @@
 <template>
     <div class="team container-fluid" id="team">
 <div class="container">
+  
   <h2 class="text-center">Les avantages qu’offrent KEA<br/><br/></h2>
   
   
@@ -12,10 +13,10 @@
       <span>freelance junior</span>
       </h3>
   <ul class="liste">
-    <li>Je suis accompagné</li>
-    <li>Je gagne de l’expérience</li>
-    <li>Je trouve des clients </li>
-    <li>J’élargis mon réseau </li>
+    <li>Je suis accompagné</li><br/>
+    <li>Je gagne de l’expérience</li><br/>
+    <li>Je trouve des clients </li><br/>
+    <li>J’élargis mon réseau </li><br/>
 </ul>
 
   </div>
@@ -30,8 +31,8 @@
       <span>freelance senior</span>
       </h3>
     <ul class="liste2">
-    <li>Je partage mon savoir</li>
-    <li>J’aide des jeunes freelances</li>
+    <li>Je partage mon savoir</li><br/>
+    <li>J’aide des jeunes freelances</li><br/>
     <li>J’élargis mon réseau </li>
    
 </ul>
@@ -85,7 +86,7 @@ h3 {
   margin: 20px;
   font-weight: bold;
   color: #433232;
-
+font-family: 'Poppins' 'Medium';
   
 }
 span {
@@ -97,13 +98,17 @@ span {
   
 }
 h2{
+  font-size: 30px;
   color: #FE007A;
+  font-weight: 'Semibold';
+  font-family: 'Poppins' 'SemiBold';
+  margin: 90px;
+  padding: 0px 0px 0px 0;
 }
 p {
   font-size: 12px;
-  font-weight: lighter;
   color: #1F1F1F;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins' 'Regular';
 }
 .liste {
   margin: 15%;
