@@ -4,6 +4,7 @@
       <bannerslack />
     <Pkslack />
     <Teams />
+    <Partenaire />
   </section>
 </template>
 
@@ -11,14 +12,16 @@
 
 import Bannerslack from './components/Bannerslack.vue'
 import Pkslack from './components/Pkslack.vue'
-import Teams from './components/Teams.vue';
+import Teams from './components/Teams.vue'
+import Partenaire from './components/Partenaire.vue';
 
 export default {
   name: 'Legale',
   components:{
     Bannerslack,
     Pkslack,
-    Teams
+    Teams,
+    Partenaire
       }
 }
 
