@@ -19,6 +19,7 @@
           <b-nav-item href="#tarif" exact-active-class=" active">Tarif</b-nav-item>
           <b-nav-item to="/Slack" exact-active-class=" active">Slack</b-nav-item>
           <b-nav-item to="/Legale" exact-active-class=" active">Login</b-nav-item>
+          <b-nav-item to="/Senior" exact-active-class=" active">Senior</b-nav-item>
           <b-nav-item to="/Singup" exact-active-class=" active">Sign up</b-nav-item>
           <b-nav-item href="https://dc-sardine-en-boite.systeme.io/kea-mentoring" exact-active-class=" active">Blog</b-nav-item>
         </b-navbar-nav>

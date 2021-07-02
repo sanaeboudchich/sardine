@@ -35,6 +35,13 @@ const routes = [
             default: () => import(/* webpackChunkName: "Slack" */ '@/Slack.vue'),
         },
     },
+    {
+        path:'/Senior',
+        name: 'Senior',
+        components: {
+            default: () => import(/* webpackChunkName: "Senior" */ '@/Senior.vue'),
+        },
+    },
 
 ]
 

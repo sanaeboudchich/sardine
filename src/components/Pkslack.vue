@@ -131,6 +131,6 @@ h2{
 }
 .cn {
      margin: 90px;
-  padding: 0px 0px 0px 0;
+ 
 }
 </style>
