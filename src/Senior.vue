@@ -2,7 +2,7 @@
 
   <section id="content">
       <Bannersenior />
-
+      <Partenaire />
      </section>
 
 </template>
@@ -10,12 +10,14 @@
 <script>
 
 import Bannersenior from './components/Bannersenior'
+import Partenaire from './components/Partenaire.vue';
 
 
 export default {
   name: 'Legale',
   components:{
-    Bannersenior
+    Bannersenior,
+     Partenaire
   }
 }
 
