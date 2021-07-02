@@ -1,5 +1,5 @@
 <template>
-  <div class="background container-fluid" id="banner">
+  <div class="banner1 background container-fluid" id="banner">
     <div class="banner_content container">
       <div class="row">
         <div class="col-md-6 mb-5 mb-md-0 ">
@@ -86,5 +86,8 @@ img{
  
  
   line-height: 2;
+}
+.banner1{
+  background-image: url(/assets/backgrandbanner.png);
 }
 </style>
