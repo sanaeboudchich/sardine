@@ -6,7 +6,7 @@
     <Services />
     <Team />
     <Tarif />
-    <Video />
+   
     <Login />
     <Arrow />
   </section>
@@ -16,7 +16,7 @@
 <script>
 import Banner from './components/Banner'
 import Services from './components/Services'
-import Video from './components/Video'
+
 import Arrow from './components/Arrow'
 import Login from "./components/login"
 import Tarif from "./components/Tarif"
@@ -27,7 +27,7 @@ import Team from "./components/Team";
 export default {
   name: 'App',
   components:{
-    Video,
+    
     Login,
     Banner,
     Services,
