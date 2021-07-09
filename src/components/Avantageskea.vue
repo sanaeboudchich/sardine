@@ -66,21 +66,18 @@ h2 {
 color: #000000;
 font-family: 'Poppins' 'SemiBold';
 }
- p {
-  color: rgb(3, 3, 3);
-  padding-bottom: 15px;
-}
 
 
 p{
-  font-family: Poppins;
+font-family: Poppins;
 font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 30px;
-/* identical to box height */
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+padding: 0px 0px 10px 150px;
 
-text-align: center;
+color: #433232;
+
 }
 
 .col-md-6 {

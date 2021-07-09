@@ -28,7 +28,7 @@
             <b-button variant="outline-dark">S'inscrire</b-button></b-nav-item>
 
             <b-nav-item to="/Contact" exact-active-class=" active">
-            <b-button variant="btn btn-dark">S'inscrire</b-button></b-nav-item>
+            <b-button variant="btn btn-dark" id="butn">S'inscrire</b-button></b-nav-item>
         </b-navbar-nav>
         
       </b-collapse>
@@ -89,6 +89,18 @@ border-bottom: 8px solid #FE007A;
 }
 #nav-collapse {
   display: flex;
+}
+
+
+  .butn {
+  background-color: #FE007A;
+  
+  border-radius: 20px;
+  
+ 
+ 
+  line-height: 2;
+
 }
 
 </style>
