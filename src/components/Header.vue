@@ -13,16 +13,24 @@
       <b-collapse id="nav-collapse" is-nav>
         <!-- CENTRE -->
         <b-navbar-nav class="nav ml-md-auto">
-          <b-nav-item href="#banner" exact-active-class=" active">Accueil</b-nav-item>
+          <!--<b-nav-item href="#banner" exact-active-class=" active ">Accueil</b-nav-item>
           <b-nav-item href="#services" exact-active-class=" active">Fonctionnement</b-nav-item>
           <b-nav-item href="#team" exact-active-class=" active">Avantages</b-nav-item>
-          <b-nav-item href="#tarif" exact-active-class=" active">Tarif</b-nav-item>
           <b-nav-item to="/Slack" exact-active-class=" active">Slack</b-nav-item>
           <b-nav-item to="/Legale" exact-active-class=" active">Login</b-nav-item>
           <b-nav-item to="/Senior" exact-active-class=" active">Senior</b-nav-item>
           <b-nav-item to="/Singup" exact-active-class=" active">Sign up</b-nav-item>
+          <b-nav-item to="/Profil" exact-active-class=" active">Profil</b-nav-item>
+          <b-nav-item to="/Profil1" exact-active-class=" active">Profil1</b-nav-item>
           <b-nav-item href="https://dc-sardine-en-boite.systeme.io/kea-mentoring" exact-active-class=" active">Blog</b-nav-item>
+        -->
+        <b-nav-item to="/Contact" exact-active-class=" active">
+            <b-button variant="outline-dark">S'inscrire</b-button></b-nav-item>
+
+            <b-nav-item to="/Contact" exact-active-class=" active">
+            <b-button variant="btn btn-dark">S'inscrire</b-button></b-nav-item>
         </b-navbar-nav>
+        
       </b-collapse>
 </b-navbar>
 </template>
@@ -61,6 +69,12 @@ export default {
   margin: 0 10px;
   padding-top: 10px;
 }
+
+.nav :active{
+
+border-bottom: 8px solid #FE007A;
+
+} 
 
 .navbar_items ul li a{
   font-family: 'Roboto', sans-serif;

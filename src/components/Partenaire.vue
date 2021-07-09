@@ -69,19 +69,24 @@ h4 {
   color: #433232;
    font-family: 'Poppins' 'Medium';
 }
-p {
-  font-size: 16px;
-  color: #1F1F1F;
-  font-family: 'Poppins' 'Regular';
-}
+
 h2{
-  font-size: 30px;
+  
   color: #FE007A;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 60px;
 }p {
-  font-size: 16px;
+  
   color: #000000;
-  font-family: 'Poppins', sans-serif;
-   margin: 10px 0px 20px 60px;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+       padding: 20px 50px 80px 50px;
 
 }
 

@@ -7,12 +7,12 @@
   <div class="card-img-overlay text-center">
     <h3 class="card-title text-center">Je suis Junior<br>
       </h3>
-      <h4>Grâce à Kea, perfectionnez</h4>
+      <h4>Apprend avec un mentor</h4>
       
-  <p>avec d’autres entrepreneurs d’exception.  Les freelances <br/> juniors peuvent maintenant être accompagnés par ceux<br/> ayant déjà de l’expérience.</p>
+  <p>Intègre une communauté de talents. Sois entouré d’entrepreneurs d’exception. Développe tes compétences auprès d’un mentor à l’écoute.</p>
   <div class="gap-2 col-12 mx-auto text-center">
-  <button class="btn" type="button" onclick="window.location.href = 'https://join.slack.com/t/kea-freelance/shared_invite/zt-saf0p3sk-2RbyTcFAmsRimaaYLeY5vw';">Pourquoi nous utiliser</button>
-  
+  <b-nav-item to="/Junior" exact-active-class=" active">
+  <button class="btn" type="button" to="/Junior">Pourquoi nous utiliser</button></b-nav-item>
 </div>
   </div>
 
@@ -22,12 +22,13 @@
               <div class="icon col-md-6 ">
   <img v-bind:src="require('../assets/violé.png')" width="500" class="center-block" alt="service-image" />
   <div class="card-img-overlay text-center">
-    <h3 class="card-title text-center">Je suis Junior<br>
+    <h3 class="card-title text-center">Je suis Senior<br>
       </h3>
-      <h4>Grâce à Kea, perfectionnez</h4>
-  <p>avec d’autres entrepreneurs d’exception.  Les freelances <br/>juniors peuvent maintenant être accompagnés par ceux <br/>ayant déjà de l’expérience.</p>
-  <div class="gap-2 col-12 mx-auto text-center">
-  <button class="btn" type="button" onclick="window.location.href = 'https://join.slack.com/t/kea-freelance/shared_invite/zt-saf0p3sk-2RbyTcFAmsRimaaYLeY5vw';">Pourquoi nous utiliser</button>
+      <h4>Partage ton savoir</h4>
+  <p>Diffuse tes connaisances auprès d’indépendants motivés. Rejoins une communauté de mentors et continue d’enrichir tes compétences.</p>
+  <div class="col-12 mx-auto text-center">
+    <b-nav-item to="/Senior" exact-active-class=" active">
+  <button class="btn" type="button" to="/Senior">Pourquoi nous utiliser</button></b-nav-item>
   
 </div>
   </div>
@@ -93,10 +94,14 @@ span {
 }
 
 p {
-  font-size: 17px;
-  font-weight: lighter;
+  padding: 0px 40px 0px 40px;
   color: #ffffff;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+
 }
 .liste {
   margin: 15%;
@@ -106,9 +111,7 @@ p {
   margin: 15%;
 
 }
-li {
-  list-style-type: square;
-}
+
 .btn{
     background-color: #ffffff;
     color: #000;

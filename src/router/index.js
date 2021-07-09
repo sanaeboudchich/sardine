@@ -21,6 +21,7 @@ const routes = [
             default: () => import(/* webpackChunkName: "Mentionslegales" */ '@/Legale.vue'),
         },
     },
+    
     {
         path:'/Singup',
         name: 'Singup',
@@ -40,6 +41,41 @@ const routes = [
         name: 'Senior',
         components: {
             default: () => import(/* webpackChunkName: "Senior" */ '@/Senior.vue'),
+        },
+    },
+    {
+        path:'/Profil1',
+        name: 'Profil1',
+        components: {
+            default: () => import(/* webpackChunkName: "Profil1" */ '@/Profil1.vue'),
+        },
+    },
+    {
+        path:'/Profil2',
+        name: 'Profil2',
+        components: {
+            default: () => import(/* webpackChunkName: "Profil2" */ '@/Profil2.vue'),
+        },
+    },
+    {
+        path:'/Profil3',
+        name: 'Profil3',
+        components: {
+            default: () => import(/* webpackChunkName: "Profil3" */ '@/Profil3.vue'),
+        },
+    },
+    {
+        path:'/Junior',
+        name: 'Junior',
+        components: {
+            default: () => import(/* webpackChunkName: "Junior" */ '@/Junior.vue'),
+        },
+    },
+    {
+        path:'/Profil4',
+        name: 'Profil4',
+        components: {
+            default: () => import(/* webpackChunkName: "Profil4" */ '@/Profil4.vue'),
         },
     },
 

@@ -1,27 +1,30 @@
 <template>
 
   <section id="content">
-      <bannerslack />
-    <Pkslack />
-    <Teams />
-    <Partenaire />
-  </section>
+    
+    <Services />
+    <Team />   
+    <Login />
+    <Arrow />
 </template>
 
 <script>
 
-import Bannerslack from './components/Bannerslack.vue'
-import Pkslack from './components/Pkslack.vue'
-import Teams from './components/Teams.vue'
-import Partenaire from './components/Partenaire.vue';
+
+import Services from './components/Services'
+import Arrow from './components/Arrow'
+import Login from "./components/login"
+import Team from "./components/Team";
 
 export default {
   name: 'Legale',
   components:{
-    Bannerslack,
-    Pkslack,
-    Teams,
-    Partenaire
+     
+    Login,
+    
+    Services,
+    Team,
+    Arrow
       }
 }
 
@@ -39,7 +42,7 @@ export default {
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins';
 }
 
 </style>

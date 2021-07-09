@@ -4,7 +4,7 @@ import router from './router'
 import "./plugins/vue2-leaflet"
 import firebase from 'firebase'
 import BootstrapVue from 'bootstrap-vue'
-
+import store from './store'
 
 
 Vue.config.productionTip = false;
@@ -25,7 +25,7 @@ firebase.initializeApp(config);
 // createApp(App).use(router).mount('#app')
 new Vue({
     router,
-    // store,
+    store,
     // bootstrap,
     render: h => h(App),
 }).$mount('#app')

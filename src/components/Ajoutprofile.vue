@@ -2,22 +2,16 @@
     <div class="team container-fluid" id="team">
 <div class="container">
   
-  <h2 class="text-center">Les avantages qu’offrent KEA<br/><br/></h2>
+  <h2 >Tu es?<br/><br/></h2>
   
   
         <div class="row container">
           <div class="icon col-md-6 ">
   <img v-bind:src="require('../assets/keahomme.png')" width="590" class="center-block" alt="service-image" />
   <div class="card-img-overlay">
-    <h3 class="card-title text-center">Je suis un<br>
-      <span>freelance junior</span>
+    <h3 class="card-title">Un junior
       </h3>
-  <ul class="liste">
-    <li>Je suis accompagné</li><br/>
-    <li>Je gagne de l’expérience</li><br/>
-    <li>Je trouve des clients </li><br/>
-    <li>J’élargis mon réseau </li><br/>
-</ul>
+     <p class="senior">Je débute dans le métier</p>
 
   </div>
 
@@ -27,15 +21,9 @@
               <div class="icon col-md-6 ">
   <img v-bind:src="require('../assets/keafemme.png')" width="600" class="center-block" alt="service-image" />
   <div class="card-img-overlay">
- <h3 class="card-title text-center">Je suis un<br>
-      <span>freelance senior</span>
+ <h3 class="card-title ">Un senior
       </h3>
-    <ul class="liste2">
-    <li>Je partage mon savoir</li><br/>
-    <li>J’aide des jeunes freelances</li><br/>
-    <li>J’élargis mon réseau </li>
-   
-</ul>
+    <p class="senior">3 ans d’expérience min</p>
   </div>
 
 
@@ -51,7 +39,7 @@
 <script>
 
 export default {
-    name:'Services'
+    name:'Ajoutprofile'
 }
 
 </script>
@@ -95,6 +83,7 @@ h3 {
   font-weight: bold;
   color: #433232;
 font-family: 'Poppins' , 'Medium';
+padding: 20px 0px 0px 0px;
 
   
 }
@@ -108,30 +97,14 @@ span {
 }
 h2{
   font-size: 30px;
-  color: #FE007A;
-  margin: 150px;
-  padding: 0px 0px 0px 0;
+  color: #000000;
+      padding: 80px 50px 0px 60px;
     font-weight: 'Semibold';
   font-family: 'Poppins' 'SemiBold';
 }
-p {
-  font-size: 12px;
-  color: #1F1F1F;
-  font-family: 'Poppins' , 'regular';
-  font-weight: normal;
- 
-}
-.liste {
-  margin: 15%;
 
-}
-.liste2 {
-  margin: 15%;
-
-}
-li {
- 
-  list-style-type: disc;
+.senior{
+    padding: 20px 0px 0px 30px;
 }
 
 </style>

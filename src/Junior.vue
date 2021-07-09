@@ -1,9 +1,10 @@
 <template>
 
   <section id="content">
-      <Bannersenior />
+      <Bannerjunior />
       <Carousel />
-       <Avantageskea />
+      <Avantageskea />
+      
       <Partenaire />
      </section>
 
@@ -11,16 +12,16 @@
 
 <script>
 
-import Bannersenior from './components/Bannersenior'
+import Bannerjunior from './components/Bannerjunior.vue'
 import Carousel from './components/Carousel.vue'
 import Avantageskea from './components/Avantageskea.vue'
 import Partenaire from './components/Partenaire.vue';
 
 
 export default {
-  name: 'Senior',
+  name: 'Junior',
   components:{
-    Bannersenior,
+    Bannerjunior,
     Carousel,
     Avantageskea,
      Partenaire

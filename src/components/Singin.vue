@@ -2,8 +2,8 @@
 <div class="sing-up">
     <input type="text" v-model="email" placeholder="Email"><br>
     <input type="password" v-model="password"  placeholder="Password"><br>
-    <button @click="signUp">Singn UP</button>
-    <router-link tp="/legale">loginin</router-link>
+    <button @click="signUp">Inscription</button>
+    <router-link tp="/legale">Connexion</router-link>
 </div>
 </template>
 
@@ -20,10 +20,16 @@ export default {
         }
     },
     methods: {
-        signUp: function(){
-            firebase.auth().createUserWithEmailAndPassword(this.email, this.password).then(
-                function (){
-                    alert('Your account has been created !')
+        async signUp() {
+           await firebase.auth().
+           createUserWithEmailAndPassword(this.email, this.password)
+           .then(async (response) => {
+                if (response.user) {
+                    await firebase.firestore().collection("users")
+                        .doc(response.user.uid).catch(error => {
+                            console.log(error).code;
+                        })
+                   }
                 },
                 function (err){
                 alert('Oops.' + err.message)

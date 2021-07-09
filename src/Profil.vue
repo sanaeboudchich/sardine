@@ -2,8 +2,6 @@
 
   <section id="content">
       <Bannersenior />
-      <Carousel />
-       <Avantageskea />
       <Partenaire />
      </section>
 
@@ -12,17 +10,13 @@
 <script>
 
 import Bannersenior from './components/Bannersenior'
-import Carousel from './components/Carousel.vue'
-import Avantageskea from './components/Avantageskea.vue'
 import Partenaire from './components/Partenaire.vue';
 
 
 export default {
-  name: 'Senior',
+  name: 'Legale',
   components:{
     Bannersenior,
-    Carousel,
-    Avantageskea,
      Partenaire
   }
 }
@@ -41,7 +35,7 @@ export default {
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
-  font-family: 'Poppins';
+  font-family: 'Ubuntu', sans-serif;
 }
 
 </style>

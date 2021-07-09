@@ -85,7 +85,7 @@ export default {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  img {width: 30%}
+  img {width: 70%}
 }
 
 
@@ -103,9 +103,10 @@ export default {
 
 h4 {
   margin: 15px;
-  font-weight: Medium;
+  font-size: 20px;
   color: #433232;
-   font-family: 'Poppins' 'Medium';
+   font-family: 'Poppins' 'medium';
+   
 }
 h2{
   font-size: 30px;
@@ -116,7 +117,12 @@ h2{
 p {
   font-size: 16px;
   color: #1F1F1F;
-  font-family: 'Poppins' 'Regular';
+  font-family: 'Poppins' 'regular';
+  font-style: normal;
+font-weight: normal;
+
+line-height: 24px;
+text-align: center;
 }
 
 </style>

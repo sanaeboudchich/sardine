@@ -5,13 +5,15 @@
         <div class="col-md-6 mb-5 mb-md-0 ">
          
           <h1>Kea besoin d’aide ?</h1>
-          <p>Kea est une plateforme web mettant en relation des freelance <br/>entre eux. L’objectif est de mettre en relation les<br/> auto-entrepreneurs avec un système de mentorat.<br/>Les freelance junior peuvent maintenant être<br/> accompagnés par ceux ayant déjà de l’expérience. <a href="https://join.slack.com/t/kea-freelance/shared_invite/zt-saf0p3sk-2RbyTcFAmsRimaaYLeY5vw"> slack </a>    </p>
+          <p class="prgrf">Kea est une plateforme web mettant en relation des freelance entre eux. L’objectif est de mettre en relation les auto-entrepreneurs avec un système de mentorat. Les freelance junior peuvent maintenant être accompagnés par ceux ayant déjà de l’expérience.  </p>
         <div><iframe width="540" height="405" src="https://f88e18e5.sibforms.com/serve/MUIEALNWgrsPtMUmMTEgbSIbtqD9CHR1sIEEck2dSsy88oScLM8YWrnW9kP8UGPqwTjsTJkv4urvgG-ie1A61IE38nyM5QOLCW5moNrs8v_oE7tq1JjtcUAhkVrTK2YwbzqKA4TrxqUdSjzL28zK1kkMsukGxs2d52oQVhB3wVUbuf6j3QGvXv-MZol6ldXdIxp3d87jhC7zWT3E" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe></div>
  
         </div>
+        
           <div class="col-md-6 mb-5 mb-md-0 text-center">
-            <img v-bind:src="require('../assets/test.png')" width="450" alt="service-image" />
-        </div>
+            <img v-bind:src="require('../assets/bannerkea.png')" width="450" alt="service-image" />
+      
+      </div>
       </div>
     </div>
   </div>
@@ -26,25 +28,32 @@ export default {
 
 <style scoped>
 
-
+@media screen and (max-width: 1300px){
+  
+  img {width: 50%}
+  h1 {
+  font-size: 2px;
+}
+}
 h1 {
 color: #FE007A;
 }
  p {
   color: rgb(3, 3, 3);
-  padding-bottom: 18px;
+  font-size: 16px;
+line-height: 24px;
 }
 
 h1 {
   font-size: 40px;
-  font-weight: 'Semibold';
-  font-family: 'Poppins' 'SemiBold';
+  font-weight: bold;
+  font-family: 'Poppins' , 'Bold';
 }
 
 p{
   font-size: 15px;
-  font-weight: lighter;
-  font-family: 'Poppins' 'Regular';
+  font-weight: normal;
+  font-family: 'Poppins';
 }
 
 .col-md-6 {
@@ -70,4 +79,14 @@ p{
 img{
   width: 80%;
 }
+ .image{
+  background-image: url(../assets/Ellipse6.png);
+}
+
+.prgrf{
+  padding: 10px 180px 20px 0;
+}
+
+
+
 </style>

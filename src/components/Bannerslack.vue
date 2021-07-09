@@ -10,7 +10,32 @@
           <p>À travers un canal Slack partagé avec d’autres entrepreneurs d’exception.  Les freelances juniors peuvent maintenant être accompagnés par ceux ayant déjà de l’expérience.</p>
         
         <div class="gap-2 col-12 mx-auto">
-  <button class="btn btn-primary" type="button" onclick="/t/kea-freelance/shared_invite/zt-saf0p3sk-2RbyTcFAmsRimaaYLeY5vw';">Rejoindre la communauté Kea</button>
+          <b-nav-item to="/Senior" exact-active-class=" active">
+  <button class="btn btn-primary" type="button" to="/Senior">Rejoindre la communauté Kea</button></b-nav-item>
+  <div>
+    <!--<b-overlay :show="show" rounded="sm" @shown="onShown" @hidden="onHidden">
+      <b-card title="Card with custom overlay content" :aria-hidden="show ? 'true' : null">
+        <b-button ref="show" :disabled="show" variant="primary" @click="show = true">
+          Rejoindre la communauté Kea
+        </b-button>
+      </b-card>
+      <template #overlay>
+        <div class="text-center sanae">
+          <b-icon icon="stopwatch" font-scale="3" animation="cylon"></b-icon>
+          <p id="cancel-label">Please wait...</p>
+          <b-button
+            ref="cancel"
+            variant="outline-danger"
+            size="sm"
+            aria-describedby="cancel-label"
+            @click="show = false"
+          >
+            Cancel
+          </b-button>
+        </div>
+      </template>
+    </b-overlay>-->
+  </div>
   
 </div>
         </div>
@@ -24,8 +49,12 @@
 
 <script>
 export default {
-    name:'Banner'
-
+    name:'Banner',
+    data() {
+      return {
+        show: false
+      }
+    }
 }
 </script>
 
@@ -52,7 +81,7 @@ font-family: 'Poppins' 'SemiBold';
 
 p{
   font-size: 16px;
-  Font-family: 'Poppins' 'Regular';
+  Font-family: 'Poppins' ,'Regular';
 }
 
 .col-md-6 {
@@ -89,5 +118,15 @@ img{
 }
 .banner1{
   background-image: url(/assets/backgrandbanner.png);
+}
+
+.sanae {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 </style>
