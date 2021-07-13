@@ -30,7 +30,7 @@
           </div>
         </div>
         </div>
-
+<img v-bind:src="require('../assets/backkkkk.png')" width="1200" alt="service-image" />
 	</div>
 
 </template>

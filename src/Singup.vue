@@ -1,7 +1,7 @@
 <template>
 
   <section id="content">
-      <Banner />
+      
     <Singin/>
   </section>
 
@@ -9,15 +9,14 @@
 
 <script>
 
-import Banner from './components/Banner'
+
 import Singin from './components/Singin';
 
 
 export default {
   name: 'Legale',
   components:{
-   Singin,
-    Banner
+   Singin
   }
 }
 
@@ -35,7 +34,8 @@ export default {
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins';
+  
 }
 
 </style>

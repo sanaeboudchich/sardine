@@ -14,7 +14,7 @@ import Partenaire from './components/Partenaire.vue';
 
 
 export default {
-  name: 'Legale',
+  name: 'Profil',
   components:{
     Bannersenior,
      Partenaire

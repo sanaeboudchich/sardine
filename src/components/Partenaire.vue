@@ -7,18 +7,18 @@
         <div class="row container">
           <div class="icon col-md-3 text-center">
 
-            <img v-bind:src="require('../assets/appel.png')" class="center-block" width="60" alt="service-image" />
+            <img v-bind:src="require('../assets/tilt.png')" class="center-block" width="60" alt="service-image" />
           </div>
 
           <div class="icon col-md-3 text-center">
-            <img v-bind:src="require('../assets/firefox.png')" width="70" class="center-block" alt="service-image" />
+            <img v-bind:src="require('../assets/Minimalistic.png')" width="70" class="center-block" alt="service-image" />
           </div>
 
           <div class="icon col-md-3 text-center">
-            <img v-bind:src="require('../assets/google.png')" class="center-block" width="70" alt="service-image" />
+            <img v-bind:src="require('../assets/resonance.png')" class="center-block" width="70" alt="service-image" />
           </div>
           <div class="icon col-md-3 text-center">
-            <img v-bind:src="require('../assets/ok.png')" class="center-block" width="70" alt="service-image" />
+            <img v-bind:src="require('../assets/associ.png')" class="center-block" width="70" alt="service-image" />
           </div>
        
         </div>

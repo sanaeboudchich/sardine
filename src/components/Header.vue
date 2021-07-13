@@ -26,9 +26,31 @@
         -->
         <b-nav-item to="/Contact" exact-active-class=" active">
             <b-button variant="outline-dark">S'inscrire</b-button></b-nav-item>
-
+            <b-button variant="outline-dark" @click="logout">log out</b-button>
             <b-nav-item to="/Contact" exact-active-class=" active">
             <b-button variant="btn btn-dark" id="butn">S'inscrire</b-button></b-nav-item>
+            <b-button variant="outline-light" @click="modalShow = !modalShow" class="btnDemo">Demander une démo</b-button>
+ <b-modal
+        v-model="modalShow"
+        class="modal bg-transparent"
+        ok-variant="transparent"
+        ok-title=""
+        ok-disabled
+        cancel-disabled
+        cancel-variant="transparent"
+        cancel-title="">
+
+
+      <form class="contact-form text-center" @submit.prevent="sendEmail">
+        <h1 class="hmodal">Nous contacter</h1>
+        <div id="divider"><hr class="solid"></div>
+        <label>Name</label>
+        <input type="text" name="from_name"/>
+        <label>Email</label>
+        <input type="email" name="from_email"/>
+        <input class="btnSubmit" type="submit" value="Envoyer">
+      </form>
+    </b-modal>
         </b-navbar-nav>
         
       </b-collapse>
@@ -38,9 +60,30 @@
 
 
 <script>
-export default {
-    name:'Header'
+import firebase from "firebase";
 
+export default {
+    name:'Header',
+    data(){
+  
+    return{
+      modalShow: false,
+    }},
+    methods: {
+  logout() {
+    firebase
+      .auth()
+      .signOut()
+      .then(() => {
+        alert('Successfully logged out');
+        this.$router.push('/');
+      })
+      .catch(error => {
+        alert(error.message);
+        this.$router.push('/');
+      });
+  },
+},
 }
 
 </script>
@@ -101,6 +144,44 @@ border-bottom: 8px solid #FE007A;
  
   line-height: 2;
 
+}
+label{
+  color: #222222;
+  font-size: 15px;
+  text-align: left!important;
+
+
+}
+.hmodal{
+  color: #222222;
+  
+}
+.contact-form{
+  padding-top: 170px;
+  padding-bottom: 70px;
+  color: #222222;
+
+}
+
+input[type=text], [type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #222222;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+
+  color: white;
+  background: #e1366a;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 </style>

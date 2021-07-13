@@ -25,15 +25,24 @@
       <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
       <b-carousel-slide>
         <template #img>
-          <img
+        <div class='content'>
+          <div class="row">
+            <div class="col-5">
+                 <img
             class="d-block img-fluid w-100"
             width="200"
             height="480"
-            src="../assets/etape1.png"
+            src="../assets/terre.png"
             caption='hi'
             alt="image slot"
             >
-          
+            </div>
+            <div class="col-7">
+              <h1>hello</h1>
+              </div>
+
+            </div>
+          </div>
         </template>
       </b-carousel-slide>
 

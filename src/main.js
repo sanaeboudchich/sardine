@@ -21,11 +21,15 @@ const config = {
 };
 firebase.initializeApp(config);
 
+firebase.auth().onAuthStateChanged(user => {
+    store.dispatch("fetchUser", user);
+  });
+
 
 // createApp(App).use(router).mount('#app')
 new Vue({
     router,
     store,
     // bootstrap,
-    render: h => h(App),
+    render: h => h(App)
 }).$mount('#app')
