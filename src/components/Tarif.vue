@@ -1,39 +1,26 @@
 <template>
-    <div class="tarif container-fluid" id="tarif">
+    <div class="tarif container-fluid row" id="tarif">
 <div class="container">
   <h2 class="text-center"><br/>Nos tarifs<br/><br/></h2>
   
   
         <div class="row container">
-          <div class="icon col-md-4 ">
-  <img v-bind:src="require('../assets/listenrml.png')" width="300" class="center-block" alt="service-image" />
-  <div class="card-img-overlay">
+          <div class="ico col-6 ">
+  
     <h3 class="s card-title text-center">Standard</h3>
     <ul class="liste">
     <li>Accès au dispositif KEA</li><br/>
     <li>4 swipes par jour </li>
 </ul>
 <h3 class="titre2 card-title text-center">0€</h3>
-  </div>
+  
 
 
           </div>
-    <div class="col-md-4 ">
-  <img v-bind:src="require('../assets/listenrml.png')" width="330" class="center-block" alt="service-image" />
-  <div class="card-img-overlay">
-    <h3 class="p card-title text-center">Premium</h3>
-    <ul class="liste">
-    <li>Accès au dispositif KEA</li><br/>
-    <li>12 swipes par jour </li>
-</ul>
-<h3 class="titre1 card-title text-center">8€/mois</h3>
-  </div>
-
-
-          </div>
-              <div class="icon col-md-4 ">
-  <img v-bind:src="require('../assets/listenrml.png')" width="300" class="center-block" alt="service-image" />
-  <div class="card-img-overlay">
+    
+  
+              <div class="icone col-6 ">
+ 
  <h3 class="g card-title text-center">Gold +</h3>
     <ul class="liste">
     <li>Accès au dispositif KEA</li><br/>
@@ -42,13 +29,10 @@
     
 </ul>
 <h3 class="card-title text-center">15€/mois</h3>
-  </div>
-
-
-          </div>
+  
         </div>
         </div>
-
+</div>
 	</div>
 
 </template>
@@ -105,7 +89,7 @@ p {
   font-size: 12px;
   font-weight: lighter;
   color: #1F1F1F;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
 }
 .liste {
   margin: 15%;
@@ -148,5 +132,14 @@ li {
   margin-bottom: 30px;
   padding: -5px 7px 7px 0;
 }
-
+.ico{
+  box-shadow: 4px 4px 6px rgb(0 0 0 / 25%);
+    border-radius: 12px;
+    margin-top: 40px;
+}
+.icone{
+  box-shadow: 4px 4px 6px rgb(0 0 0 / 25%);
+    border-radius: 12px;
+    margin-top: 40px;
+}
 </style>

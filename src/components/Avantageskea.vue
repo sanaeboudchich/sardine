@@ -3,27 +3,41 @@
   <div class="banner1 background container-fluid" id="banner">
     <div class="banner_content container">
         <h1 class="text-centre">Les avantages de travailler avec nous</h1>
-        <p class="text-centre">Mets en avant tes expériences & accompagne des freelances de demain.</p>
+        <p class="avantag text-centre">Intègre la meilleure communauté de freelances (oui rien que ça).</p>
       <div class="row">
         <div class="col-md-6 mb-5 mb-md-0 ">
          
-          <div class="mtc">
+          <div class="mtc row">
+            <div class="col-md-1">
+              <h1 class="un">1</h1>
+              </div>
+            <div class="col-md-11">
           <h3>Matcher</h3>
           
-          <p>Trouve le meilleur profil disponible parmi notre communauté de talents</p>
+          <p>Accompagne à ton rythme et rencontre des milliers de freelances motivés !</p>
           </div>
-           <div class="ptg">
-          <h3>Partager</h3>
-          
-          <p>Gagne en expérience et développe tes compétences auprès d’un mentor à l’écoute  </p>
           </div>
-           <div class="apf">
-          <h3>Amplifier</h3>
+           <div class="ptg row">
+             <div class="col-md-1">
+              <h1 class="un">2</h1>
+              </div>
+            <div class="col-md-11">
+          <h3>Briefer</h3>
           
-          <p>Fais connaisance, échange avec les membres, et élargie ton réseau pro !</p>
+          <p>Transmets ton savoir en partageant tes connaissances et tes compétences.</p>
+          </div>
+          </div>
+           <div class="apf row">
+             <div class="col-md-1">
+              <h1 class="un">3</h1>
+              </div>
+            <div class="col-md-11">
+          <h3>Souffler</h3>
+          
+          <p>Confie à des freelances de confiance les missions que tu ne peux pas assurer.</p>
           </div>
         
-  
+          </div>
   
   
 
@@ -51,12 +65,15 @@ export default {
 
 
 h1 {
-font-family: Poppins;
+font-family: "Poppins";
 font-style: normal;
 font-weight: 600;
 font-size: 30px;
 line-height: 45px;
 text-align: center;
+
+/* COULEURS PRIMAIRE/ROSE */
+
 color: #FE007A;
 
 }
@@ -69,15 +86,24 @@ font-family: 'Poppins' 'SemiBold';
 
 
 p{
-font-family: Poppins;
+font-family: "Poppins";
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 21px;
-padding: 0px 0px 10px 150px;
+padding: 0px 0px 10px 90px;
 
 color: #433232;
 
+}
+.avantag{
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+padding: 10px 100px 10px 225px;
 }
 
 .col-md-6 {
@@ -112,9 +138,7 @@ img{
  
   line-height: 2;
 }
-.banner1{
-  background-image: url(/assets/backgrandbanner.png);
-}
+
 
 .sanae {
   position: fixed; /* Sit on top of the page content */
@@ -141,6 +165,26 @@ img{
     margin-top: 40px;
 }
 h3{
-    padding: 30px 0px 0px 150px;
+    padding: 30px 0px 0px 90px;
+}
+.banner1{
+  background-image: url(../assets/vue2.png);
+}
+.un{
+  position: absolute;
+left: 6.99%;
+right: 86.21%;
+top: 10%;
+bottom: 0.91%;
+padding: 0px 0px 0px 50px;
+font-family: "Poppins";
+font-weight: bolder;
+font-weight: 900;
+
+font-size: 60px;
+line-height: 90px;
+
+color: #FFB600;
+
 }
 </style>

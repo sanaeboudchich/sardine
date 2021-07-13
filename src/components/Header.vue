@@ -25,11 +25,11 @@
           <b-nav-item href="https://dc-sardine-en-boite.systeme.io/kea-mentoring" exact-active-class=" active">Blog</b-nav-item>
         -->
         <b-nav-item to="/Contact" exact-active-class=" active">
-            <b-button variant="outline-dark">S'inscrire</b-button></b-nav-item>
-            <b-button variant="outline-dark" @click="logout">log out</b-button>
+            <b-button variant="outline" class="blanc">S'inscrire</b-button></b-nav-item>
+            <b-button variant="outline" @click="logout" class="blanc">log out</b-button>
             <b-nav-item to="/Contact" exact-active-class=" active">
-            <b-button variant="btn btn-dark" id="butn">S'inscrire</b-button></b-nav-item>
-            <b-button variant="outline-light" @click="modalShow = !modalShow" class="btnDemo">Demander une démo</b-button>
+            <b-button variant="btn btn" class="rose">Se connecter</b-button></b-nav-item>
+            <!--<b-button variant="outline-light" @click="modalShow = !modalShow" class="btnDemo">Demander une démo</b-button>
  <b-modal
         v-model="modalShow"
         class="modal bg-transparent"
@@ -50,7 +50,7 @@
         <input type="email" name="from_email"/>
         <input class="btnSubmit" type="submit" value="Envoyer">
       </form>
-    </b-modal>
+    </b-modal>-->
         </b-navbar-nav>
         
       </b-collapse>
@@ -183,5 +183,39 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
+.rose{
+  width: 179px;
+height: 43px;
+left: 175px;
+top: 0px;
 
+/* COULEURS PRIMAIRE/ROSE */
+
+background: #FE007A;
+/* BLUR CARD */
+
+box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+border-radius: 27.5px;
+color: #FFFFFF;
+}
+.blanc{
+  width: 150px;
+
+left: 0px;
+top: 0px;
+
+border: 1px solid #000000;
+box-sizing: border-box;
+/* BLUR CARD */
+
+filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.1));
+border-radius: 27.5px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
 </style>

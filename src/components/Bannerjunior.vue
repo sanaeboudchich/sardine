@@ -3,7 +3,7 @@
     <div class="banner_content container">
         <h1 class="text-center">Vous êtes freelance Junior ?</h1>
         <h5 class="text-center">Booste tes performances et gagne en compétences</h5>
-<p class="text1 text text-center">Avec Kea, développe ton réseau professionnel à travers un canal Slack partagé avec d’autres entrepreneurs d’exception. Les freelances juniors peuvent maintenant être accompagnés par ceux ayant déjà de l’expérience.</p>
+<p class="text2 text-center">Avec Kea, développe ton réseau professionnel à travers un canal Slack partagé avec d’autres entrepreneurs d’exception. Les freelances juniors peuvent maintenant être accompagnés par ceux ayant déjà de l’expérience.</p>
 	<div class="gap-2 col-12 mx-auto">
   <button class="btn " type="button" onclick="/t/kea-freelance/shared_invite/zt-saf0p3sk-2RbyTcFAmsRimaaYLeY5vw';">Rejoindre la communauté Kea</button>
        </div>
@@ -28,11 +28,21 @@ h1{
 font-family: 'Poppins' 'SemiBold';
 margin: 10px 0px 20px 30px;
 }
+h5{
+  font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 37px;
+
+
+color: #1F1F1F;
+}
 p {
   font-size: 16px;
   color: #000000;
   font-family: 'Poppins', sans-serif;
-   margin: 10px 40px 50px 30px;
+   margin: 10px 60px 0px 30px;
 
 }
 
@@ -69,5 +79,10 @@ img{
     PADDING: 60px 0px 0px 5px;
 
 }
-
+.banner1{
+  background-image: url(../assets/vue2.png);
+}
+.text2{
+  padding: 50px 60px 60px 100px;
+}
 </style>

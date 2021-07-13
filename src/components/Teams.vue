@@ -174,5 +174,9 @@ line-height: 60px;
 .row3{
   padding: 0px 80px 100px;
 }
+.teams {
+  
+background-image: url(../assets/Frame54.png);
+}
 
 </style>

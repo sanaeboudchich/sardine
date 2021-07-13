@@ -3,7 +3,7 @@
     <div class="banner_content container">
         <h1 class="text-center">Vous êtes freelance Senior</h1>
         <h5 class="text-center">Tansmettez votre savoir aux freelances de demain</h5>
-<p class="text1 text text-center">Grâce à Kea, mettez à l’épreuve et perfectionnez vos compétences techniques & pédagogiques en accompagnant de jeunes freelances. Rejoingnez notre communautée et participer à l’évolution de la french tech dans l’univers du numérique.</p>
+<p class="text2 text text-center">Grâce à Kea, mettez à l’épreuve et perfectionnez vos compétences techniques & pédagogiques en accompagnant de jeunes freelances. Rejoingnez notre communautée et participer à l’évolution de la french tech dans l’univers du numérique.</p>
 	<div class="gap-2 col-12 mx-auto">
   <button class="btn btn-primary" type="button" onclick="/t/kea-freelance/shared_invite/zt-saf0p3sk-2RbyTcFAmsRimaaYLeY5vw';">Rejoindre la communauté Kea</button>
        </div>
@@ -67,6 +67,19 @@ img{
     width: 3%;
     PADDING: 60px 0px 0px 5px;
 
+}
+.text2{
+  padding: 50px 60px 60px 100px;
+}
+h5{
+  font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 37px;
+
+
+color: #1F1F1F;
 }
 
 </style>

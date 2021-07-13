@@ -4,7 +4,7 @@
       <Bannerjunior />
       <Carousel />
       <Avantageskea />
-      
+      <Personage />
       <Partenaire />
      </section>
 
@@ -15,6 +15,7 @@
 import Bannerjunior from './components/Bannerjunior.vue'
 import Carousel from './components/Carousel.vue'
 import Avantageskea from './components/Avantageskea.vue'
+import Personage from './components/Personage.vue'
 import Partenaire from './components/Partenaire.vue';
 
 
@@ -24,6 +25,7 @@ export default {
     Bannerjunior,
     Carousel,
     Avantageskea,
+    Personage,
      Partenaire
   }
 }

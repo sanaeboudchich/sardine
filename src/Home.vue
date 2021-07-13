@@ -6,6 +6,7 @@
     <Pkslack />
     <Personage />
     <Teams />
+    
     <Partenaire />
     </section>
 
@@ -16,6 +17,7 @@ import Bannerslack from './components/Bannerslack.vue'
 import Pkslack from './components/Pkslack.vue'
 import Teams from './components/Teams.vue'
 import Personage from './components/Personage.vue'
+
 import Partenaire from './components/Partenaire.vue';
 
 
@@ -28,6 +30,7 @@ export default {
     Bannerslack,
     Pkslack,
     Personage,
+    
     Teams,
     Partenaire
     

@@ -39,7 +39,7 @@
   
 </div>
         </div>
-          <div class="col-md-6 mb-5 mb-md-0 text-center">
+          <div class="imy col-md-6 mb-5 mb-md-0 text-center">
             <img v-bind:src="require('../assets/bannerslack.png')" width="300" alt="service-image" />
         </div>
       </div>
@@ -116,9 +116,6 @@ img{
  
   line-height: 2;
 }
-.banner1{
-  background-image: url(/assets/backgrandbanner.png);
-}
 
 .sanae {
   position: fixed; /* Sit on top of the page content */
@@ -128,5 +125,9 @@ img{
   left: 0;
   right: 0;
   bottom: 0;
+}
+.banner1{
+  
+background-image: url(../assets/Frame53.png);
 }
 </style>
