@@ -1,6 +1,61 @@
 <template>
-    <div class="teams container-fluid" id="team">
-<div class="container">
+  <div class="teams container-fluid" id="team">
+    <h2 class="text-center">Pourquoi nous rejoindre ?</h2>
+    <div class="container">
+      <div class="row border rounded  team-container">
+        <div class="col-5 text-center teamimage">
+          <img
+            v-bind:src="require('../assets/Group470.png')"
+            width="250px"
+            alt="service-image"
+          />
+        </div>
+        <div class="col-7 mt-5 teamtext">
+          <h3>Des ressources uniques<br /></h3>
+          <h5>Partage, discute et rencontre des indépendants motivés</h5>
+          <p>
+            Nous rejoindre, c’est avoir une épaule sur laquelle s’appuyer
+            24h/7j. Tu as une question à poser, une annecdote à raconter : Kea
+            est là !
+          </p>
+        </div>
+      </div>
+            <div class="row border rounded  team-container">
+        <div class="col-7 mt-5 teamtext">
+             <h3>Des ressources uniques<br /></h3>
+          <h5>Partage, discute et rencontre des indépendants motivés</h5>
+          <p>
+            Nous rejoindre, c’est avoir une épaule sur laquelle s’appuyer
+            24h/7j. Tu as une question à poser, une annecdote à raconter : Kea
+            est là !
+          </p>
+        </div>
+        <div class=" col-5   text-center  teamimage">
+          <img
+            v-bind:src="require('../assets/vuu.png')"
+            width="250px"
+            alt="service-image"
+          />
+        </div>
+      </div>
+      <div class="row border rounded team-container">
+        <div class="col-5 text-center teamimage">
+          <img
+            v-bind:src="require('../assets/poaut.png')"
+            width="250px"
+            alt="service-image"
+          />
+        </div>
+        <div class="col-7 mt-5 teamtext ">
+          <h3>Une communauté soudée<br /></h3>
+          <h5>Développe tes compétences en permanence </h5>
+          <p>
+            Échange avec des entrepreneurs aux expertises variées. Inspires-toi de leurs expériences et de leurs réussites !
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--<div class="container">
   <h2 class="text-center">Pourquoi nous rejoindre ?</h2>
 
         <div class="row1 row container">
@@ -45,35 +100,63 @@
           </div>
           
         </div>
-        </div>
-
-	</div>
-    
-
+        </div>-->
+  </div>
 </template>
 
 
 <script>
-
 export default {
-    name:'Teams'
-}
-
+  name: "Teams",
+};
 </script>
 
 
 <style scoped>
-
-
-
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1300px) {
   .icon {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  img {width: 120%}
+  img {
+    width: 120%;
+  }
+  .teamimage {
+    margin-top: 3rem !important;
+    width: 280px !important;
+  }
+  .team-container{
+    margin: 5rem 0rem;
+  }
+  .teamtext {
+    margin: 0 !important;
+  }
+    h1{
+    padding-top: 0px !important;
+
+  }
+  p{
+    font-size: 0.4rem !important;
+    padding: 0px !important;
+  }
+  h1{
+    font-size: 0.8rem !important;
+  }
+  h5{
+    font-size: 0.6rem !important;
+  }
+ h3{
+    font-size: 0.7rem !important;
+  }
+
 }
 
+.team-container{
+  margin: 10rem 4rem;
+}
+.teamtext {
+  margin-top: 80px !important;
+}
 
 .service .container {
   background-color: #444444;
@@ -83,100 +166,86 @@ export default {
   padding-top: 70px;
   padding-bottom: 70px;
   background-color: #ffffff;
-
-
 }
-.img{
-object-position: right ;
+.img {
+  object-position: right;
 }
 
 h3 {
-  
   font-weight: bold;
   color: #000000;
-  
 }
-.carde{
+.carde {
   margin: 3px 150px 20px 400px;
-  
 }
 span {
-  background-color: #FFB600;
+  background-color: #ffb600;
   background-size: 3.2em;
   background-position: 30px;
   margin-bottom: 50px;
   padding: -5px 10px 10px 0;
-  
 }
 
 p {
-  
   color: #000000;
-  font-family: 'Poppins';
-   margin: 10px 0px 20px 60px;
-   
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 24px;
+  font-family: "Poppins";
 
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 }
-.carde2{
-margin: 10px 400px 20px 90px;
+.carde2 {
+  margin: 10px 400px 20px 90px;
 }
 .liste {
   margin: 15%;
-
 }
 .liste2 {
   margin: 15%;
-
 }
 li {
   list-style-type: square;
 }
-.btn{
-    background-color: #ffffff;
-    color: #000;
+.btn {
+  background-color: #ffffff;
+  color: #000;
 }
-h5{
- margin: 20px;
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 24px;
+h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
   color: #000000;
 }
-h2{
-  
+h2 {
   padding: 214px 0px 100px;
-  color: #FE007A;
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 40px;
-line-height: 60px;
+  color: #fe007a;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
 }
-.text{
- color: #000;
+.text {
+  color: #000;
 }
 .text1 {
- padding: 0px 50px 130px;
- font-family: 'Poppins' 'SemiBold';
+  padding: 0px 50px 130px;
+  font-family: "Poppins" "SemiBold";
 }
-.row1{
+.row1 {
   padding: 0px 80px 100px;
 }
-.row2{
+.row2 {
   padding: 0px 80px 100px;
 }
-.row3{
+.row3 {
   padding: 0px 80px 100px;
-}
-.teams {
-  
-background-image: url(../assets/Frame54.png);
 }
 
+.rounded {
+  border-radius: 1rem !important;
+}
 </style>

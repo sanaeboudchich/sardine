@@ -1,6 +1,7 @@
 <template>
 
   <section id="content">
+    <Headeer />
       <Creationp />
       
      </section>
@@ -10,13 +11,15 @@
 <script>
 
 import Creationp from './components/Creationp.vue'
+import Headeer from './components/Headeer.vue';
 
 
 
 export default {
   name: 'Profil3',
   components:{
-    Creationp
+    Creationp,
+    Headeer
   }
 }
 

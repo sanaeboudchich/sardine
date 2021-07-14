@@ -1,6 +1,7 @@
 <template>
 
   <section id="content">
+    <Headeer />
       <Bannersenior />
       <Partenaire />
      </section>
@@ -10,6 +11,7 @@
 <script>
 
 import Bannersenior from './components/Bannersenior'
+import Headeer from './components/Headeer.vue'
 import Partenaire from './components/Partenaire.vue';
 
 
@@ -17,7 +19,8 @@ export default {
   name: 'Profil',
   components:{
     Bannersenior,
-     Partenaire
+     Partenaire,
+    Headeer
   }
 }
 

@@ -2,7 +2,7 @@
 
   <section id="content">
     <Headeer />
-      <Case />
+      <Bravoo />
       
      </section>
 
@@ -10,15 +10,15 @@
 
 <script>
 
-import Case from './components/Case.vue'
+import Bravoo from './components/Bravoo'
 import Headeer from './components/Headeer.vue';
 
 
 
 export default {
-  name: 'Profil4',
+  name: 'Bravo',
   components:{
-    Case,
+    Bravoo,
     Headeer
   }
 }

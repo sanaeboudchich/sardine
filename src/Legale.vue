@@ -1,7 +1,7 @@
 <template>
 
   <section id="content">
-    
+    <Headeer/>
     <Banner />
     <Logiin />
   </section>
@@ -11,6 +11,7 @@
 <script>
 
 import Banner from './components/Banner'
+import Headeer from './components/Headeer.vue';
 import Logiin from './components/Logiin';
 
 
@@ -19,7 +20,8 @@ export default {
   components:{
    
     Logiin,
-    Banner
+    Banner,
+    Headeer
   }
 }
 

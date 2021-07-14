@@ -3,35 +3,35 @@
   <div class="banner1 background container-fluid" id="banner">
     <div class="banner_content container">
         <h1 class="text-centre">Les avantages de travailler avec nous</h1>
-        <p class="avantag text-centre">Intègre la meilleure communauté de freelances (oui rien que ça).</p>
+        <p class="avantag text-center">Intègre la meilleure communauté de freelances (oui rien que ça).</p>
       <div class="row">
         <div class="col-md-6 mb-5 mb-md-0 ">
          
           <div class="mtc row">
-            <div class="col-md-1">
+            <div class="col-1">
               <h1 class="un">1</h1>
               </div>
-            <div class="col-md-11">
+            <div class="col-11">
           <h3>Matcher</h3>
           
           <p>Accompagne à ton rythme et rencontre des milliers de freelances motivés !</p>
           </div>
           </div>
            <div class="ptg row">
-             <div class="col-md-1">
+             <div class="col-1">
               <h1 class="un">2</h1>
               </div>
-            <div class="col-md-11">
+            <div class="col-11">
           <h3>Briefer</h3>
           
           <p>Transmets ton savoir en partageant tes connaissances et tes compétences.</p>
           </div>
           </div>
            <div class="apf row">
-             <div class="col-md-1">
+             <div class="col-1">
               <h1 class="un">3</h1>
               </div>
-            <div class="col-md-11">
+            <div class="col-11">
           <h3>Souffler</h3>
           
           <p>Confie à des freelances de confiance les missions que tu ne peux pas assurer.</p>
@@ -62,8 +62,15 @@ export default {
 </script>
 
 <style scoped>
-
-
+@media screen and (max-width: 1300px) {
+.un{
+  right: -33px !important;
+    top: 50px !important;
+}
+.avantag{
+  padding: 0px !important;
+}
+}
 h1 {
 font-family: "Poppins";
 font-style: normal;
@@ -103,7 +110,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 30px;
-padding: 10px 100px 10px 225px;
+padding: 0px !important;
 }
 
 .col-md-6 {
@@ -166,6 +173,7 @@ img{
 }
 h3{
     padding: 30px 0px 0px 90px;
+    color: black;
 }
 .banner1{
   background-image: url(../assets/vue2.png);

@@ -1,12 +1,12 @@
 <template>
-  <form class="row container" @submit.prevent="saveProfile">
+  <form class="container" @submit.prevent="saveProfile">
     <div class="formulaire col-md-12 col-sm-12">
-      <img
+     <div class="image text-center"> <img
         v-bind:src="require('../assets/etape-4.png')"
         width="800"
         class="center-block"
         alt="service-image"
-      />
+      /></div>
       <h1>Complète ton profil :</h1>
       <div class="titre">
         <h5 class="rss">Titre du profil *</h5>
@@ -37,7 +37,7 @@
       <div class="titre">
         <h5 class="rss">Experience *</h5>
         <div class="row px-4">
-          <div class="boutton col-4 row">
+          <div class="boutton col-md-4 ">
         <label for="inputPassword4" class="forum form-label"
           >Nom de la société
         </label>
@@ -49,7 +49,7 @@
             v-model="company"
           />
         </div>
-          <div class="boutton col-4 row">
+          <div class="boutton col-md-4 ">
 
         <label for="inputPassword4" class="forum form-label"
           >Fonctionalité occupé
@@ -62,7 +62,7 @@
             v-model="job"
           />
           </div>
-          <div class="boutton col-4 row">
+          <div class="boutton col-md-4">
 
           <label for="inputPassword4" class="forum form-label"
             >Durée d'occupation
@@ -75,10 +75,10 @@
           />
         </div>
         </div>
-        <label for="inputPassword4" class="forum form-label"
+        <div class="boutton">
+          <label for="inputPassword4" class="forum form-label"
           >Description
         </label>
-        <div class="boutton">
           <input
             type="text"
             class="form-control"
@@ -95,7 +95,7 @@
       <div class="titre">
         <h5 class="rss">Formation *</h5>
         <div class="row px-4">
-          <div class="boutton col-4 row">
+          <div class="boutton col-md-4">
         
         <label for="inputPassword4" class="forum form-label"
           >Nom de la formation</label
@@ -109,7 +109,7 @@
           />
        
         </div>
-          <div class="boutton col-4 row">
+          <div class="boutton col-md-4 p-0">
         <label for="inputPassword4" class="forum form-label"
           >Organisme de sirtification</label
         >
@@ -121,7 +121,7 @@
             v-model="organization"
           />
           </div>
-          <div class="boutton col-4 row">
+          <div class="boutton col-md-4">
           <label for="inputPassword4" class="form-label"
             >Année d'optention</label
           >
@@ -313,7 +313,7 @@ export default {
         })
         .then(() => {
           this.fetchUser();
-          this.$router.push({ name: "Home" });
+          this.$router.push({ name: "/Bravo" });
         })
         .catch(() => {});
     },
@@ -352,9 +352,6 @@ p {
   padding: 20px 150px 40px;
 }
 
-.col-md-12 {
-  padding: 60px 0px 0px 300px;
-}
 .background {
   padding-top: 100px;
   background-color: #ffffff;
@@ -376,7 +373,7 @@ p {
   margin-top: 40px;
 }
 .forum {
-  padding: 10px 60px 0px 30px;
+  
   font-family: "Poppins";
 font-style: normal;
 font-weight: 500;

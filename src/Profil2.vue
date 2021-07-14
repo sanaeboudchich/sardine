@@ -1,6 +1,7 @@
 <template>
 
   <section id="content">
+    <Headeer />
       <Inscription />
       
      </section>
@@ -8,15 +9,17 @@
 </template>
 
 <script>
+import Headeer from './components/Headeer.vue'
 
-import Inscription from './components/Inscription.vue'
+import Inscription from './components/Inscription.vue';
 
 
 
 export default {
   name: 'Profil2',
   components:{
-    Inscription
+    Inscription,
+    Headeer
   }
 }
 

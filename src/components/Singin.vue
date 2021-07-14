@@ -1,36 +1,69 @@
 <template>
 <div class="partenaire" id="services">
 <div class="container">
+     <img
+        v-bind:src="require('../assets/Group9.png')"
+        
+        class=" img center-block text-centre"
+        alt="service-image"
+      />
   <div class=" row container sing-up">
-    <div class=" col-md-6 col-sm-6">
-       
+    <div class=" col-md-6">
+       <img
+        v-bind:src="require('../assets/trer.png')"
+        width="500"
+        class="vu center-block"
+        alt="service-image"
+      />
         
         <div class="row px-6">
-          <div class="boutton col-6 row">
-            <input type="text" v-model="email" placeholder="Email" /><br/>
+          <div class="boutton col-md-6 ">
+              <b-form-group
+        id="input-group-1"
+        label="Nom:"
+        />
+            <b-form-input type="text" v-model="nom" /><br/>
           </div>
-           <div class="boutton col-6 row">
-            <input type="text" v-model="email" placeholder="Email" /> <br/>
+           <div class="boutton col-md-6">
+               <b-form-group
+        id="input-group-1"
+        label="Prenom:"
+        />
+            <b-form-input type="text" v-model="prenom" /> <br/>
           </div>
         </div>
          
         <div class="row px-6">
-          <div class="boutton col-6 row">
-            <input type="text" v-model="email" placeholder="Email" />
+          <div class="boutton col-md-6">
+              <b-form-group
+        id="input-group-1"
+        label="Date de naissance:"
+        />
+            <b-form-input type="text" v-model="naissance" />
           </div>
-           <div class="boutton col-6 row">
+           <div class="boutton col-md-6">
             
           </div>
         </div>
-
-    <input type="text" v-model="email" placeholder="Email" /><br />
-    <input type="password" v-model="password" placeholder="Password" /><br />
-    <button @click="signUp">Inscription</button>
-    <router-link tp="/legale">Connexion</router-link>
+              <b-form-group
+        id="input-group-1"
+        label="Email:"
+        />
+    <b-form-input type="text" v-model="email" /><br />
+              <b-form-group
+        id="input-group-1"
+        label="Mot de passe:"
+        />
+    <b-form-input type="password" v-model="password" /><br />
+           <b-form-group
+        id="input-group-1"
+        label="Confirmer le mot de passe:"
+        />
+    <b-form-input type="password" v-model="password" /><br />
+    <button @click="signUp" class="ins">Inscription</button>
+    <router-link tp="/profil3">Connexion</router-link>
     </div>
- <div class=" col-md-6 col-sm-6">
-  <img v-bind:src="require('../assets/backsng.png')" width="100" alt="service-image" />
- </div>
+
  </div>
 </div>
 </div>
@@ -46,6 +79,9 @@ export default {
     return {
       email: "",
       password: "",
+      nom:"",
+      prenom: "",
+      naissance:"",
     };
   },
   methods: {
@@ -54,8 +90,7 @@ export default {
         .auth()
         .createUserWithEmailAndPassword(this.email, this.password)
         .then(() => {
-          alert("Successfully registered! Please login.");
-          this.$router.push("/");
+          this.$router.push("/Profil3");
         })
         .catch((error) => {
           alert(error.message);
@@ -82,3 +117,39 @@ export default {
   },
 };
 </script>
+<style scoped>
+.ins{
+  background: #FE007A;
+/* BLUR CARD */
+
+box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+border-radius: 27.5px;
+ align-items: 4;
+  border-radius: 20px;
+
+  color: #ffffff;
+
+  line-height: 2;
+
+}
+.img{
+    width: 1000px;
+  }
+.partenaire{
+  background: url("../assets/Group6.png") no-repeat center;
+  height: 1176px;
+}
+@media screen and (max-width: 1300px) {
+
+  .partenaire{
+    background: url("../assets/Group387.png") no-repeat right !important;
+    height: 1500px !important;
+  }
+  .img{
+    width: 300px !important;
+  }
+  .vu{
+    width: 200px !important;
+  }
+}
+</style>

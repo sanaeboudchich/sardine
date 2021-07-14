@@ -1,49 +1,57 @@
 <template>
   <div class="banner1 background container-fluid" id="banner">
     <div class="banner_content container">
-        <h1 class="text-center">Vous êtes freelance Junior ?</h1>
-        <h5 class="text-center">Booste tes performances et gagne en compétences</h5>
-<p class="text2 text-center">Avec Kea, développe ton réseau professionnel à travers un canal Slack partagé avec d’autres entrepreneurs d’exception. Les freelances juniors peuvent maintenant être accompagnés par ceux ayant déjà de l’expérience.</p>
-	<div class="gap-2 col-12 mx-auto">
-  <button class="btn " type="button" onclick="/t/kea-freelance/shared_invite/zt-saf0p3sk-2RbyTcFAmsRimaaYLeY5vw';">Rejoindre la communauté Kea</button>
-       </div>
-       <a href="#crousel"><img class="link" src="../assets/link.png"></a>
+      <h1 class="text-center">Vous êtes freelance Junior ?</h1>
+      <h5 class="text-center">
+        Booste tes performances et gagne en compétences
+      </h5>
+      <p class="text2 text-center">
+        Avec Kea, développe ton réseau professionnel à travers un canal Slack
+        partagé avec d’autres entrepreneurs d’exception. Les freelances juniors
+        peuvent maintenant être accompagnés par ceux ayant déjà de l’expérience.
+      </p>
+      <div class="gap-2 col-12 text-center">
+        <button
+          class="btn"
+          type="button"
+          onclick="/t/kea-freelance/shared_invite/zt-saf0p3sk-2RbyTcFAmsRimaaYLeY5vw';"
+        >
+          Rejoindre la communauté Kea
+        </button>
+      </div>
+      <div class="gap-2 col-12 text-center pt-5">
+        <a href="#crousel"><img class="link" src="../assets/link.png" /></a>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-    name:'Banner'
-
-}
+  name: "Banner",
+};
 </script>
 
 <style scoped>
-
-h1{
+h1 {
   font-size: 30px;
   color: #000000;
   font-weight: Bold;
-font-family: 'Poppins' 'SemiBold';
-margin: 10px 0px 20px 30px;
+  font-family: "Poppins" "SemiBold";
 }
-h5{
+h5 {
   font-family: "Poppins";
-font-style: normal;
-font-weight: 500;
-font-size: 25px;
-line-height: 37px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37px;
 
-
-color: #1F1F1F;
+  color: #1f1f1f;
 }
 p {
   font-size: 16px;
   color: #000000;
-  font-family: 'Poppins', sans-serif;
-   margin: 10px 60px 0px 30px;
-
+  font-family: "Poppins";
 }
 
 .col-md-6 {
@@ -51,38 +59,28 @@ p {
   padding-top: 50px;
 }
 
-.background{
+.background {
   padding-top: 100px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding-bottom: 100px;
 }
 
-
-
-img{
+img {
   width: 50%;
 }
 .btn {
-  background-color: #FFB600;
+  background-color: #ffb600;
   align-items: 4;
   border-radius: 20px;
-  padding: 5 70px ;
-  margin: 0px 400px 0px 410px;
-  color: #FFFFFF;
- 
+
+  color: #ffffff;
+
   line-height: 2;
 }
 .link {
-    margin-right: 1em!important;
-    margin-left: 34rem!important;
-    width: 3%;
-    PADDING: 60px 0px 0px 5px;
-
+  width: 3%;
 }
-.banner1{
+.banner1 {
   background-image: url(../assets/vue2.png);
-}
-.text2{
-  padding: 50px 60px 60px 100px;
 }
 </style>

@@ -1,6 +1,7 @@
 <template>
 
   <section id="content">
+    <Headeer />
       <Ajoutprofile />
       
      </section>
@@ -10,13 +11,15 @@
 <script>
 
 import Ajoutprofile from './components/Ajoutprofile'
+import Headeer from './components/Headeer.vue';
 
 
 
 export default {
   name: 'Profil1',
   components:{
-    Ajoutprofile
+    Ajoutprofile,
+    Headeer
   }
 }
 

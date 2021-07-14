@@ -111,8 +111,8 @@ img{
   background-color: #FE007A;
   align-items: center;
   border-radius: 20px;
-  padding: 4 90px;
  
+  padding: 10px;
  
   line-height: 2;
 }

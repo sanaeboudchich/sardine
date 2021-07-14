@@ -91,6 +91,13 @@ const routes = [
             default: () => import(/* webpackChunkName: "Profil4" */ '@/Profil4.vue'),
         },
     },
+    {
+        path: '/Bravo',
+        name: 'Bravo',
+        components: {
+            default: () => import(/* webpackChunkName: "Bravo" */ '@/Bravo.vue'),
+        },
+    },
 
 ]
 

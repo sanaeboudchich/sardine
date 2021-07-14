@@ -1,7 +1,7 @@
 <template>
 
   <section id="content">
-      
+      <Headeer/>
     <Singin/>
   </section>
 
@@ -10,13 +10,16 @@
 <script>
 
 
-import Singin from './components/Singin';
+import Singin from './components/Singin'
+
+import Headeer from './components/Headeer.vue';
 
 
 export default {
   name: 'Legale',
   components:{
-   Singin
+   Singin,
+    Headeer
   }
 }
 

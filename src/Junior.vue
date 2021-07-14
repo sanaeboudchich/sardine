@@ -1,11 +1,13 @@
 <template>
 
   <section id="content">
+    <Header />
       <Bannerjunior />
       <Carousel />
       <Avantageskea />
       <Personage />
       <Partenaire />
+      <Footer />
      </section>
 
 </template>
@@ -16,7 +18,9 @@ import Bannerjunior from './components/Bannerjunior.vue'
 import Carousel from './components/Carousel.vue'
 import Avantageskea from './components/Avantageskea.vue'
 import Personage from './components/Personage.vue'
-import Partenaire from './components/Partenaire.vue';
+import Partenaire from './components/Partenaire.vue'
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue';
 
 
 export default {
@@ -26,7 +30,9 @@ export default {
     Carousel,
     Avantageskea,
     Personage,
-     Partenaire
+     Partenaire,
+    Header,
+    Footer
   }
 }
 

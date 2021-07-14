@@ -27,7 +27,7 @@
         <b-nav-item to="/Contact" exact-active-class=" active">
             <b-button variant="outline" class="blanc">S'inscrire</b-button></b-nav-item>
             <b-button variant="outline" @click="logout" class="blanc">log out</b-button>
-            <b-nav-item to="/Contact" exact-active-class=" active">
+            <b-nav-item to="/Profil1" exact-active-class=" active">
             <b-button variant="btn btn" class="rose">Se connecter</b-button></b-nav-item>
             <!--<b-button variant="outline-light" @click="modalShow = !modalShow" class="btnDemo">Demander une démo</b-button>
  <b-modal

@@ -1,10 +1,12 @@
 <template>
 
   <section id="content">
+    <Header />
       <Bannersenior />
       <Carousel />
        <Avantageskea />
       <Partenaire />
+      <Footer />
      </section>
 
 </template>
@@ -14,7 +16,9 @@
 import Bannersenior from './components/Bannersenior'
 import Carousel from './components/Carousel.vue'
 import Avantageskea from './components/Avantageskea.vue'
-import Partenaire from './components/Partenaire.vue';
+import Partenaire from './components/Partenaire.vue'
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue';
 
 
 export default {
@@ -23,7 +27,9 @@ export default {
     Bannersenior,
     Carousel,
     Avantageskea,
-     Partenaire
+     Partenaire,
+    Header,
+    Footer
   }
 }
 
