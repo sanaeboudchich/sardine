@@ -22,9 +22,11 @@
           <h4>Lucas</h4>
           <p class="titre text-centre">Chef de projet</p>
           <p class="disc">Gestion de projet & <br />stratégie globale</p>
+            <b-nav-item to="/Singup" exact-active-class=" active">
           <button class="btnn btn" type="button" href="#img3">
             Voir le profil
           </button>
+          </b-nav-item >
           <br />
         </div>
         <div class="col-sm-3">
@@ -39,9 +41,11 @@
           <h4>Thomas</h4>
           <p class="titre text-centre">Développeur back</p>
           <p class="disc">Création de site internet CakePHP - Laravel</p>
+            <b-nav-item to="/Singup" exact-active-class=" active">
           <button class="btnn btn" type="button" href="#img3">
             Voir le profil
           </button>
+          </b-nav-item >
           <br />
         </div>
         <div class="col-sm-3">
@@ -57,9 +61,11 @@
           <p class="titre text-centre">Webmarketing</p>
           <p class="disc">Stratégie SEO & Analytics</p>
           
+            <b-nav-item to="/Singup" exact-active-class=" active">
           <button class="btnn btn" type="button" href="#img3">
             Voir le profil
           </button>
+          </b-nav-item >
           <br />
         </div>
         <div class="col-sm-3">
@@ -74,9 +80,11 @@
           <h4>Sanae</h4>
           <p class="titre text-centre">UX Designer</p>
           <p class="disc">Interface Web & Mobile Prototypage Invision</p>
+            <b-nav-item to="/Singup" exact-active-class=" active">
           <button class="btnn btn" type="button" href="#img3">
             Voir le profil
           </button>
+          </b-nav-item >
           <br />
         </div>
       </div>

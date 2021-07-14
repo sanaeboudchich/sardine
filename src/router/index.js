@@ -22,6 +22,14 @@ const routes = [
             default: () => import(/* webpackChunkName: "Mentionslegales" */ '@/Legale.vue'),
         },
     },
+    {
+        path: '/Apropo',
+        name: 'Apropo',
+        components: {
+            default: () => import(/* webpackChunkName: "Apropo" */ '@/Apropo.vue'),
+        },
+    },
+
 
     {
         path: '/Singup',
@@ -98,6 +106,7 @@ const routes = [
             default: () => import(/* webpackChunkName: "Bravo" */ '@/Bravo.vue'),
         },
     },
+  
 
 ]
 

@@ -1,33 +1,31 @@
 <template>
-<div class="content">
-  <div class="nn container">
-    <div class="nmp text-center">
-      <img
-        v-bind:src="require('../assets/etape5.png')"
-        width="790"
-        class="vu center-block"
-        alt="service-image"
-      />
-    </div>
-    <h2>Merci pour ton inscription !<br /><br /></h2>
-    <div class="text-center">
+  <div class="content">
+    <div class="nn container">
+      <div class="nmp text-center">
         <img
-        v-bind:src="require('../assets/Pose241.png')"
-        width="200"
-        class="center-block"
-        alt="service-image"
-      />
-      <p>Tu peux désormais accèder à notre Slack afin de discuter<br/>
-avec d’autres freelances ou encore de dénicher des missions.<br/>
-Tu auras accès aux chans réservés aux senior une fois<br/>
-ton profil vérifé !</p>
+          v-bind:src="require('../assets/etape5.png')"
+          width="790"
+          class="vu center-block"
+          alt="service-image"
+        />
+      </div>
+      <h2>Merci pour ton inscription !<br /><br /></h2>
+      <div class="text-center">
+        <img
+          v-bind:src="require('../assets/Pose241.png')"
+          width="200"
+          class="center-block"
+          alt="service-image"
+        />
+        <p>
+          Tu peux désormais accèder à notre Slack afin de discuter<br />
+          avec d’autres freelances ou encore de dénicher des missions.<br />
+          Tu auras accès aux chans réservés aux senior une fois<br />
+          ton profil vérifé !
+        </p>
+      </div>
     </div>
-    
-      
-    
   </div>
-  </div>
- 
 </template>
 
 
@@ -44,13 +42,13 @@ export default {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-   .vu{
+  .vu {
     width: 200px !important;
   }
   img {
     width: 100%;
   }
- 
+
   h2 {
     font-size: 10px;
     font-weight: normal bold;
@@ -92,6 +90,4 @@ h2 {
 .senior {
   padding: 20px 0px 0px 30px;
 }
-
-
 </style>

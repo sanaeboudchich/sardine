@@ -6,6 +6,7 @@
       <Carousel />
       <Avantageskea />
       <Personage />
+      <Pric />
       <Partenaire />
       <Footer />
      </section>
@@ -20,6 +21,7 @@ import Avantageskea from './components/Avantageskea.vue'
 import Personage from './components/Personage.vue'
 import Partenaire from './components/Partenaire.vue'
 import Header from './components/Header.vue'
+import Pric from './components/Pric.vue'
 import Footer from './components/Footer.vue';
 
 
@@ -28,6 +30,7 @@ export default {
   components:{
     Bannerjunior,
     Carousel,
+    Pric,
     Avantageskea,
     Personage,
      Partenaire,

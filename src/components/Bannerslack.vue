@@ -10,7 +10,7 @@
           <p>À travers un canal Slack partagé avec d’autres entrepreneurs d’exception.  Les freelances juniors peuvent maintenant être accompagnés par ceux ayant déjà de l’expérience.</p>
         
         <div class="gap-2 col-12 mx-auto">
-          <b-nav-item to="/Senior" exact-active-class=" active">
+          <b-nav-item to="/Singup" exact-active-class=" active">
   <button class="btn btn-primary" type="button" to="/Senior">Rejoindre la communauté Kea</button></b-nav-item>
   <div>
     <!--<b-overlay :show="show" rounded="sm" @shown="onShown" @hidden="onHidden">

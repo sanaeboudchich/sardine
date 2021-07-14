@@ -1,19 +1,14 @@
 <template>
-<b-navbar toggleable="lg"
-              variant="white"
-              bg-primary
-              class="container navbar">
+  <b-navbar toggleable="lg" variant="white" bg-primary class="container navbar">
+    <b-navbar-brand to="/">
+      <img alt="Logo" src="@/assets/loogo.png" width="90%" />
+    </b-navbar-brand>
 
-      <b-navbar-brand to="/">
-        <img alt="Logo" src="@/assets/loogo.png" width="90%">
-
-      </b-navbar-brand>
-      
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-      <b-collapse id="nav-collapse" is-nav>
-        <!-- CENTRE -->
-        <b-navbar-nav class="nav ml-md-auto">
-          <!--<b-nav-item href="#banner" exact-active-class=" active ">Accueil</b-nav-item>
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+    <b-collapse id="nav-collapse" is-nav>
+      <!-- CENTRE -->
+      <b-navbar-nav class="nav ml-md-auto">
+        <!--<b-nav-item href="#banner" exact-active-class=" active ">Accueil</b-nav-item>
           <b-nav-item href="#services" exact-active-class=" active">Fonctionnement</b-nav-item>
           <b-nav-item href="#team" exact-active-class=" active">Avantages</b-nav-item>
           <b-nav-item to="/Slack" exact-active-class=" active">Slack</b-nav-item>
@@ -25,36 +20,70 @@
           <b-nav-item href="https://dc-sardine-en-boite.systeme.io/kea-mentoring" exact-active-class=" active">Blog</b-nav-item>
         -->
         <b-nav-item to="/Profil1" exact-active-class=" active">
-            <b-button variant="outline" class="blanc">S'inscrire</b-button></b-nav-item>
-            <b-button variant="outline" @click="logout" class="blanc">log out</b-button>
-            <b-nav-item to="/Profil1" exact-active-class=" active">
-            <b-button variant="btn btn" class="rose">Se connecter</b-button></b-nav-item>
-            <!--<b-button variant="outline-light" @click="modalShow = !modalShow" class="btnDemo">Demander une démo</b-button>
- <b-modal
-        v-model="modalShow"
-        class="modal bg-transparent"
-        ok-variant="transparent"
-        ok-title=""
-        ok-disabled
-        cancel-disabled
-        cancel-variant="transparent"
-        cancel-title="">
+          <b-button variant="outline" class="blanc" v-if="!islogged"
+            >S'inscrire</b-button
+          ></b-nav-item
+        >
+        <b-button
+          variant="outline"
+          v-if="islogged"
+          @click="logout"
+          class="blanc"
+          >log out</b-button
+        >
+        <b-nav-item exact-active-class=" active">
+          <b-button
+            variant="btn btn"
+            class="rose"
+            @click="modalShow = !modalShow"
+            v-if="!islogged"
+            >Se connecter</b-button
+          ></b-nav-item
+        >
 
-
-      <form class="contact-form text-center" @submit.prevent="sendEmail">
-        <h1 class="hmodal">Nous contacter</h1>
-        <div id="divider"><hr class="solid"></div>
-        <label>Name</label>
-        <input type="text" name="from_name"/>
-        <label>Email</label>
-        <input type="email" name="from_email"/>
-        <input class="btnSubmit" type="submit" value="Envoyer">
-      </form>
-    </b-modal>-->
-        </b-navbar-nav>
-        
-      </b-collapse>
-</b-navbar>
+        <b-modal
+          v-model="modalShow"
+          class="modal bg-transparent p-0"
+          ok-variant="transparent"
+          ok-title=""
+          ok-disabled
+          cancel-disabled
+          cancel-variant="transparent"
+          cancel-title=""
+        >
+          <div class="container-fluid">
+            <div class="row pt-4">
+                <h2 class="color-purple text-center mx-auto">Bienvenue <br> sur Kea !</h2>
+            </div>
+            <div class="row pt-2 text-center">
+              <p class="mx-auto">Pas encore membre ? <a href="#" class="color-purple">S'inscrire</a></p>
+            </div>
+            <form class="contact-form px-5" @submit.prevent="signIn">
+              <label for="email">Email :</label>
+              <input
+                type="text"
+                id="email"
+                class="form-control col"
+                v-model="email"
+                placeholder="Email"
+              /><br />
+              <label for="password">Mot de passe :</label>
+              <input
+                class="form-control col"
+                type="password"
+                id="password"
+                v-model="password"
+                placeholder="Password"
+              /><br />
+              <div class="row text-center mt-2">
+                <input type="submit" class="mx-auto" value="Se connecter" />
+              </div>
+            </form>
+          </div>
+        </b-modal>
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
 </template>
 
 
@@ -63,64 +92,106 @@
 import firebase from "firebase";
 
 export default {
-    name:'Header',
-    data(){
-  
-    return{
+  name: "Header",
+  data() {
+    return {
       modalShow: false,
-    }},
-    methods: {
-  logout() {
-    firebase
-      .auth()
-      .signOut()
-      .then(() => {
-        alert('Successfully logged out');
-        this.$router.push('/');
-      })
-      .catch(error => {
-        alert(error.message);
-        this.$router.push('/');
-      });
+      islogged: false,
+      email: "",
+      password: "",
+    };
   },
-},
-}
-
+  methods: {
+    signIn: function () {
+      /*firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(
+               function (){
+                    
+                    this.$router.push({name:"Home"}) 
+                    this.$router.push({name:"Home"}) 
+                },
+                function (err){
+                alert('Oops.' + err.message)
+                }
+            );*/
+      firebase
+        .auth()
+        .signInWithEmailAndPassword(this.email, this.password)
+        .then(() => {
+          firebase
+            .auth()
+            .setPersistence(firebase.auth.Auth.Persistence.SESSION);
+          alert("Vous etes connecté !");
+          this.$router.push("/Apropo");
+        })
+        .catch((error) => {
+          alert(error.message);
+        });
+    },
+    logout() {
+      firebase
+        .auth()
+        .signOut()
+        .then(() => {
+          alert("Vous etes déconecté !");
+          this.$router.push("/");
+        })
+        .catch((error) => {
+          alert(error.message);
+          this.$router.push("/");
+        });
+    },
+    IsLoggedIn() {
+      firebase.auth().onAuthStateChanged((user) => {
+        if (user) {
+          this.islogged = true;
+        } else {
+          this.islogged = false;
+        }
+      });
+    },
+  },
+  created: function () {
+    this.IsLoggedIn();
+  },
+};
 </script>
 
 
 
 <style scoped>
-
-
-.navbar container-fluid{
+.modal-header {
+  display: none !important;
+}
+.modal-footer {
+  display: none !important;
+}
+.navbar container-fluid {
   background-color: #0a0a0a;
 }
 .nav {
-    font-family: 'Poppins' 'Regular';
-    font-size: 16px;
-    color: #000000;
- 
+  font-family: "Poppins" "Regular";
+  font-size: 16px;
+  color: #000000;
 }
 
-
-.navbar_items ul{
+.navbar_items ul {
   display: flex;
 }
 
-.navbar_items ul li{
+.navbar_items ul li {
   margin: 0 10px;
   padding-top: 10px;
 }
 
-.nav :active{
+.color-purple{
+  color: #fe007a;
+}
+.nav :active {
+  border-bottom: 8px solid #fe007a;
+}
 
-border-bottom: 8px solid #FE007A;
-
-} 
-
-.navbar_items ul li a{
-  font-family: 'Roboto', sans-serif;
+.navbar_items ul li a {
+  font-family: "Roboto", sans-serif;
   font-size: 17px;
   color: rgb(10, 10, 10);
   padding: 5px;
@@ -134,36 +205,30 @@ border-bottom: 8px solid #FE007A;
   display: flex;
 }
 
+.butn {
+  background-color: #fe007a;
 
-  .butn {
-  background-color: #FE007A;
-  
   border-radius: 20px;
-  
- 
- 
-  line-height: 2;
 
+  line-height: 2;
 }
-label{
+label {
   color: #222222;
   font-size: 15px;
-  text-align: left!important;
-
-
+  text-align: left !important;
 }
-.hmodal{
+.hmodal {
   color: #222222;
-  
 }
-.contact-form{
-  padding-top: 170px;
+.contact-form {
+  padding-top: 20px;
   padding-bottom: 70px;
   color: #222222;
-
 }
 
-input[type=text], [type=email], textarea {
+input[type="text"],
+[type="email"],
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #222222;
@@ -174,48 +239,46 @@ input[type=text], [type=email], textarea {
   resize: vertical;
 }
 
-input[type=submit] {
-
+input[type="submit"] {
   color: white;
   background: #e1366a;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 20px;
   cursor: pointer;
 }
-.rose{
+.rose {
   width: 179px;
-height: 43px;
-left: 175px;
-top: 0px;
+  height: 43px;
+  left: 175px;
+  top: 0px;
 
-/* COULEURS PRIMAIRE/ROSE */
+  /* COULEURS PRIMAIRE/ROSE */
 
-background: #FE007A;
-/* BLUR CARD */
+  background: #fe007a;
+  /* BLUR CARD */
 
-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
-border-radius: 27.5px;
-color: #FFFFFF;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 27.5px;
+  color: #ffffff;
 }
-.blanc{
+.blanc {
   width: 150px;
 
-left: 0px;
-top: 0px;
+  left: 0px;
+  top: 0px;
 
-border: 1px solid #000000;
-box-sizing: border-box;
-/* BLUR CARD */
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  /* BLUR CARD */
 
-filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.1));
-border-radius: 27.5px;
+  filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.1));
+  border-radius: 27.5px;
 
-/* Inside Auto Layout */
+  /* Inside Auto Layout */
 
-flex: none;
-order: 0;
-flex-grow: 0;
-
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 </style>

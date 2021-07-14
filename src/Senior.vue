@@ -5,6 +5,7 @@
       <Bannersenior />
       <Carousel />
        <Avantageskea />
+       <Pric />
       <Partenaire />
       <Footer />
      </section>
@@ -18,6 +19,7 @@ import Carousel from './components/Carousel.vue'
 import Avantageskea from './components/Avantageskea.vue'
 import Partenaire from './components/Partenaire.vue'
 import Header from './components/Header.vue'
+import Pric from './components/Pric.vue'
 import Footer from './components/Footer.vue';
 
 
@@ -28,6 +30,7 @@ export default {
     Carousel,
     Avantageskea,
      Partenaire,
+     Pric,
     Header,
     Footer
   }

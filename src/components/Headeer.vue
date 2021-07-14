@@ -1,63 +1,48 @@
 <template>
-<b-navbar toggleable="lg"
-              variant="white"
-              bg-primary
-              class="container navbar">
+  <b-navbar toggleable="lg" variant="white" bg-primary class="container navbar">
+    <b-navbar-brand to="/">
+      <img alt="Logo" src="@/assets/loogo.png" width="90%" />
+    </b-navbar-brand>
 
-      <b-navbar-brand to="/">
-        <img alt="Logo" src="@/assets/loogo.png" width="90%">
-
-      </b-navbar-brand>
-      
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-    
-  
-</b-navbar>
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+  </b-navbar>
 </template>
 
 
 
 <script>
-
 export default {
-    name:'Headeer'
-}
-
+  name: "Headeer",
+};
 </script>
 
 
 
 <style scoped>
-
-
-.navbar container-fluid{
+.navbar container-fluid {
   background-color: #0a0a0a;
 }
 .nav {
-    font-family: 'Poppins' 'Regular';
-    font-size: 16px;
-    color: #000000;
- 
+  font-family: "Poppins" "Regular";
+  font-size: 16px;
+  color: #000000;
 }
 
-
-.navbar_items ul{
+.navbar_items ul {
   display: flex;
 }
 
-.navbar_items ul li{
+.navbar_items ul li {
   margin: 0 10px;
   padding-top: 10px;
 }
 
-.nav :active{
+.nav :active {
+  border-bottom: 8px solid #fe007a;
+}
 
-border-bottom: 8px solid #FE007A;
-
-} 
-
-.navbar_items ul li a{
-  font-family: 'Roboto', sans-serif;
+.navbar_items ul li a {
+  font-family: "Roboto", sans-serif;
   font-size: 17px;
   color: rgb(10, 10, 10);
   padding: 5px;
@@ -71,36 +56,30 @@ border-bottom: 8px solid #FE007A;
   display: flex;
 }
 
+.butn {
+  background-color: #fe007a;
 
-  .butn {
-  background-color: #FE007A;
-  
   border-radius: 20px;
-  
- 
- 
-  line-height: 2;
 
+  line-height: 2;
 }
-label{
+label {
   color: #222222;
   font-size: 15px;
-  text-align: left!important;
-
-
+  text-align: left !important;
 }
-.hmodal{
+.hmodal {
   color: #222222;
-  
 }
-.contact-form{
+.contact-form {
   padding-top: 170px;
   padding-bottom: 70px;
   color: #222222;
-
 }
 
-input[type=text], [type=email], textarea {
+input[type="text"],
+[type="email"],
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #222222;
@@ -111,8 +90,7 @@ input[type=text], [type=email], textarea {
   resize: vertical;
 }
 
-input[type=submit] {
-
+input[type="submit"] {
   color: white;
   background: #e1366a;
   padding: 12px 20px;
@@ -120,39 +98,38 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-.rose{
+.rose {
   width: 179px;
-height: 43px;
-left: 175px;
-top: 0px;
+  height: 43px;
+  left: 175px;
+  top: 0px;
 
-/* COULEURS PRIMAIRE/ROSE */
+  /* COULEURS PRIMAIRE/ROSE */
 
-background: #FE007A;
-/* BLUR CARD */
+  background: #fe007a;
+  /* BLUR CARD */
 
-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
-border-radius: 27.5px;
-color: #FFFFFF;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 27.5px;
+  color: #ffffff;
 }
-.blanc{
+.blanc {
   width: 150px;
 
-left: 0px;
-top: 0px;
+  left: 0px;
+  top: 0px;
 
-border: 1px solid #000000;
-box-sizing: border-box;
-/* BLUR CARD */
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  /* BLUR CARD */
 
-filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.1));
-border-radius: 27.5px;
+  filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.1));
+  border-radius: 27.5px;
 
-/* Inside Auto Layout */
+  /* Inside Auto Layout */
 
-flex: none;
-order: 0;
-flex-grow: 0;
-
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 </style>

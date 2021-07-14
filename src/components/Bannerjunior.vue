@@ -10,15 +10,11 @@
         partagé avec d’autres entrepreneurs d’exception. Les freelances juniors
         peuvent maintenant être accompagnés par ceux ayant déjà de l’expérience.
       </p>
-      <div class="gap-2 col-12 text-center">
-        <button
-          class="btn"
-          type="button"
-          onclick="/t/kea-freelance/shared_invite/zt-saf0p3sk-2RbyTcFAmsRimaaYLeY5vw';"
-        >
-          Rejoindre la communauté Kea
-        </button>
-      </div>
+	<div class="gap-2 col-12 text-center">
+    <b-nav-item to="/Singup" exact-active-class=" active">
+  <button class="btn btn-primary" type="button" >Rejoindre la communauté Kea</button>
+      </b-nav-item>
+       </div>
       <div class="gap-2 col-12 text-center pt-5">
         <a href="#crousel"><img class="link" src="../assets/link.png" /></a>
       </div>

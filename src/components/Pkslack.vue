@@ -5,7 +5,7 @@
         <div class="col-sm-6 px-5 mb-5">
           <div class="p-3 border rounded bg-warning text-center">
             <h3>Je suis Junior</h3>
-            <h4>Apprend avec un mentor</h4>
+            <h4>Apprends avec un mentor</h4>
             <p> Intègre une communauté de talents. Sois entouré d’entrepreneurs
               d’exception. Développe tes compétences auprès d’un mentor à
               l’écoute.</p>

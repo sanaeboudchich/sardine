@@ -5,8 +5,11 @@
         <h5 class="text-center">Tansmettez votre savoir aux freelances de demain</h5>
 <p class="text2 text-center">Grâce à Kea, mettez à l’épreuve et perfectionnez vos compétences techniques & pédagogiques en accompagnant de jeunes freelances. Rejoingnez notre communautée et participer à l’évolution de la french tech dans l’univers du numérique.</p>
 	<div class="gap-2 col-12 text-center">
-  <button class="btn btn-primary" type="button" onclick="/t/kea-freelance/shared_invite/zt-saf0p3sk-2RbyTcFAmsRimaaYLeY5vw';">Rejoindre la communauté Kea</button>
+    <b-nav-item to="/Singup" exact-active-class=" active">
+  <button class="btn btn-primary" type="button" >Rejoindre la communauté Kea</button>
+      </b-nav-item>
        </div>
+       
      <div class="gap-2 col-12 text-center pt-5">
         <a href="#crousel"><img class="link" src="../assets/link.png" /></a>
       </div>
