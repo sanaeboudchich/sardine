@@ -24,7 +24,7 @@
           <b-nav-item to="/Profil1" exact-active-class=" active">Profil1</b-nav-item>
           <b-nav-item href="https://dc-sardine-en-boite.systeme.io/kea-mentoring" exact-active-class=" active">Blog</b-nav-item>
         -->
-        <b-nav-item to="/Contact" exact-active-class=" active">
+        <b-nav-item to="/Profil1" exact-active-class=" active">
             <b-button variant="outline" class="blanc">S'inscrire</b-button></b-nav-item>
             <b-button variant="outline" @click="logout" class="blanc">log out</b-button>
             <b-nav-item to="/Profil1" exact-active-class=" active">
