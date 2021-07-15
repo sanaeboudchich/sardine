@@ -5,7 +5,7 @@
       <div class="row border rounded  team-container">
         <div class="col-5 text-center teamimage">
           <img
-            v-bind:src="require('../assets/Group470.png')"
+            v-bind:src="require('../assets/team1.png')"
             width="250px"
             alt="service-image"
           />
@@ -32,8 +32,8 @@
         </div>
         <div class=" col-5   text-center  teamimage">
           <img
-            v-bind:src="require('../assets/vuu.png')"
-            width="250px"
+            v-bind:src="require('../assets/team2.png')"
+            width="200px"
             alt="service-image"
           />
         </div>
@@ -41,7 +41,7 @@
       <div class="row border rounded team-container">
         <div class="col-5 text-center teamimage">
           <img
-            v-bind:src="require('../assets/poaut.png')"
+            v-bind:src="require('../assets/team3.png')"
             width="250px"
             alt="service-image"
           />
