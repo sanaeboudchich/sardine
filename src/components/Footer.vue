@@ -115,7 +115,7 @@
         <div class="icone col-md-4 pr-4">
           <div class="iconcol-md-3text-centerblock_2">
             <ul class="color-rose text-right">
-              <li><a href="#">Blog</a></li>
+              <li><a href="https://dc-sardine-en-boite.systeme.io/kea-mentoring">Blog</a></li>
               <li><a href="/Communique_de_presse_Kea.pdf" download>Dossier de press</a></li>
             </ul>
             <div style="position: absolute; right: 0">
